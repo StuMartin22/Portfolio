@@ -1,21 +1,21 @@
-/* color palette:  
-h1 {
-    color: #EEECE6
-    color: #C5956A
-    color: #352111
-    color:#DEEBE7
-    color: #6C4124
-} */
+:root {
+    --light: #EEECE6;
+    --light-brown: #C5956A;
+    --dark-brown: #352111;
+    --light-blue: #deebe7
+    --brown: #6C4124 
+
 header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 6px solid #6c4124;
+    border: 6px solid var(--brown);
     margin-bottom: 10px;
 }
 
 #profile {
     margin: 10px;
+    border: 6px solid var(--brown);
 }
 
 #profile img {
@@ -25,21 +25,27 @@ header {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #eeece6;
+    background-color: var(--light);
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    border: 6px solid var(--brown);
 }
 
 .cards img {
     width: 300px;
     height: 175px;
-    border: 6px solid #6c4124;
     margin: 10px;
+    width: 25%;
+    height: 200px;
+    border: 6px solid var(--brown);
 }
 
 footer {
     width: 100%;
+    border: 6px solid var(--brown);
 }
