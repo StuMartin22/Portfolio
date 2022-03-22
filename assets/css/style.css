@@ -7,9 +7,10 @@
 }
 
 header {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 10px;
     background-color: var(--brown);
     color: var(--light-blue);
@@ -19,21 +20,27 @@ h1 {
     font-size: 60px;
     font-weight: bold;
     text-align: left;
+    margin-top: auto;
 }
 
 nav {
-    display:flex;
-    flex-direction: column;
+    display:block;
+    justify-content: right;
+    padding-right: 4px;
 }
 
-nav>p {
-    display:inline-block;
+nav>li {
+    display:flex;
+    justify-content: space-between;
     text-align: right;
+    margin-top: auto;
+    padding-left: 10px;
 }
 
 #profile {
     margin: 10px;
     border: 6px solid var(--brown);
+    width: auto;
 }
 
 #profile img {
