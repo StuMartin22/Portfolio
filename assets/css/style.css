@@ -60,7 +60,7 @@ ul>li {
     position: relative;
 }
 
-div {
+.profile {
     position: relative;
     justify-content: end;
 }
@@ -93,6 +93,9 @@ body {
     justify-content: center;
     border: 6px solid var(--brown);
     margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    color:white;
 }
 
 .cards img {
@@ -102,13 +105,24 @@ body {
     border: 6px solid var(--brown);
 }
 
+.bottom-right-link {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.placeholder {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
     height: 10vh;
     background-color: var(--brown);
     color: var(--light-blue);
-    height:
 }
 
 footer>* {
