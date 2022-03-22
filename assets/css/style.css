@@ -17,40 +17,65 @@ header {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 450%;
     font-weight: bold;
     text-align: left;
     margin-top: auto;
+    position: relative;
+    top: 3vh;
 }
 
 nav {
     display:block;
     justify-content: right;
     padding-right: 4px;
+    font-size: 125%;
 }
 
-nav>li {
+nav>ul{
+    display: flex;
+    float:right;
+    flex-wrap: wrap;
+}
+
+ul>li {
     display:flex;
     justify-content: space-between;
-    text-align: right;
+    float: right;
     margin-top: auto;
-    padding-left: 10px;
+    margin-left: 15px;
+    padding-left: 15px;
+    font-size: 125%;
 }
 
 #profile {
-    margin: 10px;
+    margin-bottom: 10px;
     border: 6px solid var(--brown);
     width: auto;
 }
 
 #profile img {
-    margin-bottom: 10px;
+    float: left;
     justify-content: left;
+    position: relative;
 }
 
 div {
     position: relative;
     justify-content: end;
+}
+
+div>h2 {
+    position: relative;
+    left: 50vh;
+    font-size: 200%;
+    font-weight:bold;
+}
+
+div>p {
+    position: relative;
+    font-size: 110%;
+    text-align: center;
 }
 
 body {
@@ -64,21 +89,40 @@ body {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    width:100%;
+    width: auto;
     justify-content: center;
     border: 6px solid var(--brown);
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .cards img {
     margin: 10px;
-    width: 25%;
+    width: 30%;
     height: 200px;
     border: 6px solid var(--brown);
 }
 
 footer {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
     background-color: var(--brown);
     color: var(--light-blue);
+    height:
+}
+
+footer>* {
+display: inline;
+justify-content: space-between;
+float: initial;
+margin: auto;
+font-size: 110%;
+}
+
+footer>h3 {
+    font-size: 175%;
+}
+
+footer>p {
+    font-size: 110%;
 }
