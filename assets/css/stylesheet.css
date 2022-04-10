@@ -8,7 +8,8 @@
 }
 .btn {
   background-color: var(--darkGreen);
-  position: absolute;
+  object-fit: contain;
+  max-width: 145px;
 }
 .btn:hover{
   border: 2px solid var(--lightGreen);
@@ -26,18 +27,17 @@
   color: var(--lightGray)
 }
 .cardImage{
-  max-height: 15vh;
-  min-height:auto;
-  max-width: 30vw;
-  min-width: auto;
+  width: 100%;
+  object-fit: contain;
 }
 .card{
-  max-width: 40vw;
+  /* /* max-width: 40vw;
   min-width: 40vw;
-  max-height: 75vh;
-  min-height: 75vh;
-  position:relative;
+  max-height: 75vh; */
+  min-height: 96vh; 
+  object-fit: cover;
 }
 .card-text{
-  position:absolute;
+  object-fit: contain;
+  width: 100%;
 }
