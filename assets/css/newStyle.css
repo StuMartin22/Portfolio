@@ -23,3 +23,15 @@
   background-color: var(--black);
   color: var(--lightGray)
 }
+.cardImage{
+  max-height: 175px;
+  min-height:175px;
+  max-width: 375px;
+  min-width: 375px;
+}
+.card-body{
+  max-width: 410px;
+  min-width: 410px;
+  max-height: 500px;
+  min-height: 500px;
+}
