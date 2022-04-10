@@ -1,0 +1,25 @@
+:root {
+  --black: #001011;
+  --darkGreen: #588958;
+  --lightGreen: #BEFFC7;
+  --darkGray: #554E4E;
+  --lightGray: #CDCBCB;
+  --brightBlue: 
+}
+.btn {
+  background-color: var(--darkGreen)
+}
+.btn:hover{
+  border: 2px solid var(--lightGreen);
+}
+#me{
+  max-height: 300px; 
+  max-width: 300px;
+}
+#movePlease{
+  margin-bottom: 156px;
+}
+.dropdown-item:hover{
+  background-color: var(--black);
+  color: var(--lightGray)
+}
