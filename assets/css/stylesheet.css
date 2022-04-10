@@ -7,7 +7,8 @@
   --brightBlue: 
 }
 .btn {
-  background-color: var(--darkGreen)
+  background-color: var(--darkGreen);
+  position: absolute;
 }
 .btn:hover{
   border: 2px solid var(--lightGreen);
@@ -15,6 +16,7 @@
 #me{
   max-height: 33vh; 
   max-width: 33vw;
+  page-break-after: always;
 }
 #movePlease{
   margin-bottom: 156px;
@@ -34,4 +36,8 @@
   min-width: 40vw;
   max-height: 75vh;
   min-height: 75vh;
+  position:relative;
+}
+.card-text{
+  position:absolute;
 }
