@@ -13,8 +13,8 @@
   border: 2px solid var(--lightGreen);
 }
 #me{
-  max-height: 300px; 
-  max-width: 300px;
+  max-height: 33vh; 
+  max-width: 33vw;
 }
 #movePlease{
   margin-bottom: 156px;
@@ -24,14 +24,14 @@
   color: var(--lightGray)
 }
 .cardImage{
-  max-height: 175px;
-  min-height:175px;
-  max-width: 375px;
-  min-width: 375px;
+  max-height: 15vh;
+  min-height:auto;
+  max-width: 30vw;
+  min-width: auto;
 }
-.card-body{
-  max-width: 410px;
-  min-width: 410px;
-  max-height: 500px;
-  min-height: 500px;
+.card{
+  max-width: 40vw;
+  min-width: 40vw;
+  max-height: 75vh;
+  min-height: 75vh;
 }
