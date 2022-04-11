@@ -41,3 +41,6 @@
   object-fit: contain;
   width: 100%;
 }
+.footer{
+  height: 8vh;
+}
