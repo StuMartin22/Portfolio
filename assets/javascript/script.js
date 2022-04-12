@@ -21,8 +21,11 @@ email.on('click', function(){
 
 phone.on('click', function(){
     //loggers;
-    copyPhone;
+    copyPhone();
     copied.show();
+    setTimeout(() => {
+        copied.hide();
+    },1000);
 });
 
 function copyEmail () {
