@@ -12,7 +12,8 @@
   max-width: 145px;
 }
 .btn:hover{
-  border: 2px solid var(--lightGreen);
+  border: 3px solid var(--lightGreen);
+  background-color: var(--darkGray);
 }
 #me{
   max-height: 33vh; 
@@ -31,9 +32,6 @@
   object-fit: contain;
 }
 .card{
-  /* /* max-width: 40vw;
-  min-width: 40vw;
-  max-height: 75vh; */
   min-height: 96vh; 
   object-fit: cover;
 }
