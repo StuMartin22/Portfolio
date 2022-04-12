@@ -11,11 +11,16 @@ copied.hide();
 
 email.on('click', function(){
     // loggers;
-    copyEmail;
+    copyEmail();
+    // console.log(copyEmail)
     copied.show();
+    setTimeout(() => {
+        copied.hide();
+    },1000);
 });
 
 phone.on('click', function(){
+    //loggers;
     copyPhone;
     copied.show();
 });
@@ -28,7 +33,3 @@ function copyPhone () {
     navigator.clipboard.writeText(phoneNumber);
 };
 
-
-// function loggers () {
-//     console.log('clickityClackity')
-// }

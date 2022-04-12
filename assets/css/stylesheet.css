@@ -4,7 +4,6 @@
   --lightGreen: #BEFFC7;
   --darkGray: #554E4E;
   --lightGray: #CDCBCB;
-  --brightBlue: 
 }
 .btn {
   background-color: var(--darkGreen);
@@ -41,4 +40,19 @@
 }
 .footer{
   height: 8vh;
+}
+#copied {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  width:175px;
+  height: auto;
+  background-color: var(--black);
+  color:var(--lightGreen);
+  border: 3px solid var(--darkGreen);
+  justify-content: center;
+  z-index:1;
+  border-radius: 6px;
+  bottom: 25%;
+  left: 63%;
 }
