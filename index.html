@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.Martin | Portfolio</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
 </head>
 <body class="bg-light">
@@ -57,7 +57,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary cancelBtn" data-dismiss="modal">Cancel</button>
-            <button type="button" id="emailButtonId" class="btn btn-primary emailBtn">Copy My Email to Clipboard</button>           
+            <button type="button" class="btn btn-primary emailBtn">Copy My Email to Clipboard</button>           
           </div>
           <span id="copied">Copied to Clipboard!</span>
             </div>
@@ -65,7 +65,7 @@
         </div>
     <div class="modal fade" id="phone" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content" id="maybe">
           <div class="modal-header">
             <h5 class="modal-title" id="phoneModalLabel">Get My Number!</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -148,18 +148,22 @@
         </div>
       </div>
 </section>
-<ul class="nav justify-content-end footer bg-dark text-light">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
+<ul class="nav navBottomBar justify-content-end footer bg-dark text-light pr-4">
+  <li class="nav-item bottomNavLink justify-content-center">
+    <a class="nav-link bottomNavLink" href="#" data-toggle="modal" data-target="#phone">
+      <img id="phoneImage" src="./assets/images/phone/2x/outline_call_white_24dp.png"/>
+    </a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+  <li class="nav-item bottomNavLink">
+    <a class="nav-link bottomNavLink justify-content-center" id = "emailDropdown" href="#" data-toggle="modal" data-target="#email"> 
+      <img id="emailImage" src="./assets/images/email/2x/outline_email_white_24dp.png">
+    </a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+  <li class="nav-item bottomNavLink">
+    <a class="nav-link bottomNavLink justify-content-center"><img id="linkedInLogo" src="./assets/images/LinkedIn-Logos/linked in white.png"></a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
+  <li class="nav-item bottomNavLink">
+    <a class="nav-link bottomNavLink justify-content-center"> <img id="gitHubLogo" src="./assets/images/GitHub-Logos/GitHub_Logo_White.png" alt="github logo in white letters."></a>
   </li>
 </ul>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
