@@ -1,9 +1,7 @@
 var phone = $('.phoneBtn');
 var email = $('.emailBtn');
-var emailTest = $('#emailButtonId');
 var emailAddress = "stucodes22@gmail.com";
 var phoneNumber = "19188086027";
-var dropdownBtn = $('#emailDropdown');
 var copied = $('#copied');
 
 
@@ -22,6 +20,7 @@ email.on('click', function(){
 phone.on('click', function(){
     //loggers;
     copyPhone();
+    // console.log(copyPhone)
     copied.show();
     setTimeout(() => {
         copied.hide();
@@ -35,4 +34,3 @@ function copyEmail () {
 function copyPhone () {
     navigator.clipboard.writeText(phoneNumber);
 };
-
