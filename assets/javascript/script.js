@@ -3,27 +3,30 @@ var email = $('.emailBtn');
 var emailAddress = "stucodes22@gmail.com";
 var phoneNumber = "19188086027";
 var copied = $('#copied');
+var copiedPhone =$('#copiedPhone')
 
 
 copied.hide();
 
 email.on('click', function(){
-    // loggers;
+    console.log(copyEmail);
     copyEmail();
-    // console.log(copyEmail)
+    console.log(copyEmail);
     copied.show();
     setTimeout(() => {
         copied.hide();
     },1000);
 });
 
+copiedPhone.hide()
+
 phone.on('click', function(){
-    //loggers;
+    console.log(copyPhone);
     copyPhone();
-    // console.log(copyPhone)
-    copied.show();
+    console.log(copyPhone);
+    copiedPhone.show();
     setTimeout(() => {
-        copied.hide();
+        copiedPhone.hide();
     },1000);
 });
 

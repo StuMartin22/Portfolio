@@ -42,7 +42,7 @@
 .footer {
   height: 10vh;
 }
-#copied {
+#copied, #copiedPhone {
   position: absolute;
   display: inline-block;
   cursor: pointer;
