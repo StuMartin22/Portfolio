@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import { Route, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import  Footerbar  from './pages/Footerbar'
+import  Headerbar  from './pages/Headerbar'
+import Homepage from './pages/Homepage'
+import { Grommet } from 'grommet';
+
+const theme = {
+  global: {
+    font: {
+      family: 'Roboto',
+      size: '18px',
+      height: '20px',
+    },
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grommet theme={theme}>
+
+    <Router>
+
+      <Headerbar />
+      
+      <Routes>
+
+        <Route 
+          path="/" 
+          element={< Homepage />}
+          />
+
+        {/* <Route
+          path="/about"
+          element={< About />}
+          /> */}
+
+      </Routes>
+
+      <Footerbar />
+
+    </Router>
+
+    </Grommet>
   );
 }
 
