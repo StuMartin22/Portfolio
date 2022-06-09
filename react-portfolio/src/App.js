@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Grommet } from 'grommet';
+import { Anchor, Button, Footer, Grommet, Header, Heading, Main, Menu, Paragraph, Text } from 'grommet';
+import { Home } from 'grommet-icons'
 
 const theme = {
   global: {
@@ -11,26 +12,23 @@ const theme = {
   },
 };
 
-function App() {
+const App = () => {
   return (
     <Grommet theme={theme}>
-
-  const AppBar = (props) => (
-  <Box
-    tag='header'
-    direction='row'
-    align='center'
-    justify='between'
-    background='brand'
-    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-    elevation='medium'
-    style={{ zIndex: '1' }}
-    {...props}
-  />
-);
-<AppBar>Hello Grommet!</AppBar>
+<Header background="brand">
+  <Button icon={<Home />} hoverIndicator />
+  <Menu label="account" items={[{ label: 'logout' }]} />
+</Header>
+<Main pad="large">
+  <Heading></Heading>
+  <Paragraph></Paragraph>
+</Main>
+<Footer background="brand" pad="medium">
+  <Text>Copyright</Text>
+  <Anchor label="About" />
+</Footer>
     </Grommet>
-  )
-};
+  );
+}
 
 export default App;
