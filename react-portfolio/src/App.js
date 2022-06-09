@@ -1,6 +1,10 @@
 import React from 'react'
-import { Anchor, Button, Footer, Grommet, Header, Heading, Main, Menu, Nav, Paragraph, Text } from 'grommet';
-import { Download, Github, Home, Linkedin, Mail, Phone  } from 'grommet-icons'
+// import { Route, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import  Footerbar  from './pages/Footerbar'
+import  Headerbar  from './pages/Headerbar'
+import Homepage from './pages/Homepage'
+import { Grommet } from 'grommet';
 
 const theme = {
   global: {
@@ -12,29 +16,31 @@ const theme = {
   },
 };
 
-const App = () => {
+function App() {
   return (
     <Grommet theme={theme}>
 
-<Header background="brand">
-  <Button icon={<Home />} hoverIndicator />
-  <Menu label="account" items={[{ label: 'logout' }]} />
-</Header>
+    <Router>
 
-<Main pad="large">
-  <Heading></Heading>
-  <Paragraph></Paragraph>
-</Main>
+      <Headerbar />
+      
+      <Routes>
 
-<Footer background="brand" pad="medium">
-  <Text>Contact me!</Text>
-  <Button icon={<Github />} hoverIndicator />
-  <Button icon={<Linkedin />} hoverIndicator />
-  <Button icon={<Phone />} hoverIndicator />
-  <Button icon={<Mail />} hoverIndicator />
-  <Button icon={<Download />} hoverIndicator />
-  <Anchor label="About" />
-</Footer>
+        <Route 
+          path="/" 
+          element={< Homepage />}
+          />
+
+        {/* <Route
+          path="/about"
+          element={< About />}
+          /> */}
+
+      </Routes>
+
+      <Footerbar />
+
+    </Router>
 
     </Grommet>
   );
