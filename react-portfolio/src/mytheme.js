@@ -1,5 +1,5 @@
-import { deepMerge } from "grommet/utils";
-import { grommet } from "grommet";
+import { deepMerge } from 'grommet/utils';
+import { grommet } from 'grommet';
 
 const myTheme= deepMerge(grommet,{
 
@@ -17,7 +17,15 @@ const myTheme= deepMerge(grommet,{
 
             brand: 'dark-2',
 
-            background: 'light-3',
+            'background-back': {
+                light: 'light-3',
+                dark: 'dark-5'
+            },
+
+            'background-front': {
+                dark: 'light-5',
+                light: 'light-3'
+              },
 
             accentColors: [
                 '#6FFFB0', '#FD6FFF', '#81FCED', '#FFCA58'
@@ -56,29 +64,5 @@ const myTheme= deepMerge(grommet,{
         }
       },
 });
-
-// const customTheme = deepMerge(grommet, {
-//     defaultMode: "dark",
-//     global: {
-//       colors: {
-//         "background-back": {
-//           dark: "#1A1F2B",
-//           light: "#EFEFEF"
-//         },
-//         "background-front": {
-//           dark: "#222938",
-//           light: "#FFFFFF"
-//         },
-//         "background-contrast": {
-//           dark: "#FFFFFF08",
-//           light: "#11111108"
-//         },
-//         "background-custom": {
-//           dark: "#0E5265",
-//           light: "#00C8FF"
-//         }
-//       }
-//     }
-//   });
 
     export default myTheme;
