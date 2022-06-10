@@ -36,6 +36,21 @@ function App() {
           element={< About />}
           /> */}
 
+          {/* <Route
+          path="/contact"
+          element={< Contact />}
+          /> */}
+
+          {/* <Route
+          path="/projects"
+          element={< Projects />}
+          /> */}
+
+          {/* <Route
+          path="/tech"
+          element={< Tech />}
+          /> */}
+
       </Routes>
 
       <Footerbar />
