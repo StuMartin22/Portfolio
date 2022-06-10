@@ -46,11 +46,6 @@ function App() {
           element={< Projects />}
           /> */}
 
-          {/* <Route
-          path="/tech"
-          element={< Tech />}
-          /> */}
-
       </Routes>
 
       <Footerbar />
