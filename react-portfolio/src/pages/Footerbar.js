@@ -4,7 +4,7 @@ import { Download, Github,  Linkedin, Mail, Phone  } from 'grommet-icons'
 
 const Footerbar = () => {
   return (
-<Footer background="brand" pad="small">
+<Footer  pad="small" background={{"color":"brand","position":"bottom, sticky"}}>
   <Text>Contact me:</Text>
   <Button icon={<Github />} hoverIndicator />
   <Button icon={<Linkedin />} hoverIndicator />

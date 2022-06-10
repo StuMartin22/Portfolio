@@ -3,7 +3,7 @@ import { Home } from 'grommet-icons'
 
 const Headerbar = () => {
   return (
-<Header background="brand">
+<Header background="brand" pad="small" position="absolute">
   <Button icon={<Home />} hoverIndicator />
   <Menu label="View" items={[{ label: 'Home' },{label: 'About Me'},{label: 'Contact Me'},{label: 'Projects'}]} />
 </Header>

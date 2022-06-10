@@ -1,10 +1,10 @@
 import React from 'react'
-// import { Route, Routes} from 'react-router-dom'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import  Footerbar  from './pages/Footerbar'
 import  Headerbar  from './pages/Headerbar'
-import Homepage from './pages/Homepage'
+// import Homepage from './pages/Homepage'
 import { Grommet } from 'grommet';
+import Mainpage from './pages/Main'
 
 const theme = {
   global: {
@@ -18,7 +18,7 @@ const theme = {
 
 function App() {
   return (
-    <Grommet theme={theme}>
+    <Grommet full='true' theme={theme}>
 
     <Router>
 
@@ -28,7 +28,7 @@ function App() {
 
         <Route 
           path="/" 
-          element={< Homepage />}
+          element={< Mainpage />}
           />
 
         {/* <Route
