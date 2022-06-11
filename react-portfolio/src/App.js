@@ -5,11 +5,12 @@ import  Headerbar  from './pages/Headerbar'
 import { Grommet } from 'grommet';
 import Mainpage from './pages/Main'
 import myTheme from './mytheme'
+import Contact from './pages/Contact'
 
 
 function App() {
   return (
-    <Grommet full='true' theme={myTheme}>
+    <Grommet full theme={myTheme}>
 
     <Router>
 
@@ -27,10 +28,10 @@ function App() {
           element={< About />}
           /> */}
 
-          {/* <Route
+          <Route
           path="/contact"
           element={< Contact />}
-          /> */}
+          />
 
           {/* <Route
           path="/projects"

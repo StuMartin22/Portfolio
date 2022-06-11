@@ -1,6 +1,6 @@
 import { Footer } from 'grommet'
 import { Anchor, Button, Text} from 'grommet'
-import { Download, Github,  Linkedin, Mail, Phone  } from 'grommet-icons'
+import { Download, Github, Linkedin, Mail, Phone  } from 'grommet-icons'
 
 const Footerbar = () => {
   return (
