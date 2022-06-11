@@ -18,48 +18,47 @@ const myTheme= deepMerge(grommet,{
             brand: 'dark-2',
 
             'background-back': {
-                light: 'light-3',
+                light: 'light-2',
                 dark: 'dark-5'
             },
 
             'background-front': {
-                dark: 'light-5',
-                light: 'light-3'
+                dark: 'light-4',
+                light: 'light-2'
               },
 
             accentColors: [
-                '#6FFFB0', '#FD6FFF', '#81FCED', '#FFCA58'
+                '#B9ED96', '#F58EA6', '#95E4EE', '#E07A52'
             ],
 
             neutralColors: [
-                '#588958', '#3D138D', '#00739D', '#A2423D'
+                '#588958', '#020887', '#5DBCC7', '#7D1538'
             ],
 
             statusColors: {
-                critical: '#FF4040',
-                error: '#FF4040',
-                warning: '#FFAA15',
-                ok: '#00C781',
+                critical: '#E70D40',
+                error: '#E70D40',
+                warning: '#F5B700',
+                ok: '#00CC33',
                 unknown: '#CCCCCC',
                 disabled: '#CCCCCC',
             },
 
             lightColors:[
+                '#FFFFFB',
                 '#F8F8F8',
-                '#F2F2F2',
+                '#EAEBED',
                 '#EDEDED',
-                '#DADADA',
-                '#DADADA',
                 '#DADADA',
             ],
 
             darkColors:[
+                '#292F36',
                 '#333333',
                 '#555555',
                 '#777777',
                 '#999999',
-                '#999999',
-                '#999999',
+                '#ADADAD', 
             ]
         }
       },
