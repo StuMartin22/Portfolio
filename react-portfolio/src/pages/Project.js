@@ -1,71 +1,37 @@
-import { Box, Button, Card, CardBody, CardFooter, CardHeader, Heading, Main, Paragraph, Text, Tip} from 'grommet';
-import { Github, Linkedin, Mail, Phone } from 'grommet-icons';
+import { Box, Grid, Main } from 'grommet'
 
-
-const Myprojects = () => {
+const Myprojects  = () => {
   return(
-
     <Main>
-        <Heading>
-            Check out some of the stuff I've worked on!
-        </Heading>
-
-        <Paragraph margin={{bottom:'6vh'}}>
-            Here are some projects that I have worked on in the past! All of these will have links to both the live link (if available) and the repository on GitHub! 
-        </Paragraph>
-
-        <Box>
-
-            <Card justify='center' alignSelf='center' background='light-3' border={{'color':'dark-5', 'size':'medium'}}>
-                <CardHeader justify='center' pad="small">
-                    <Text size='large'>PROJECT1</Text>
-                </CardHeader>
-                <CardBody align='center' pad="medium">BODY PROJECT1</CardBody>
-                <CardFooter background='light-3'>
-                    <Tip content='Click here to check this project out!'>
-                        <Button primary label='Live Link' />
-                    </Tip>
-                    <Tip content='Click here go to check out the repo!'>
-                        <Button />
-                    </Tip>
-                </CardFooter>
-            </Card>
-
-            <Card justify='center' align='center' background='light-3' border={{'color':'dark-5', 'size':'medium'}}>
-                <CardHeader justify='center' pad="small">
-                    <Text size='large'>PROJECT2</Text>
-                </CardHeader>
-                <CardBody alignContent='center' pad="medium">BODY PROJECT2</CardBody>
-                <CardFooter background='light-3'>
-                    <Tip content='Click here to check this project out!'>
-                        <Button />
-                    </Tip>
-                    <Tip content='Click here to check the repo!'>
-                        <Button />
-                    </Tip>
-                </CardFooter>
-            </Card>
-
-            <Card justify='center' align='center' background='light-3' border={{'color':'dark-5','size':'medium'}}>
-                <CardHeader justify='center' pad="small">
-                    <Text size='large'>PROJECT3</Text>
-                </CardHeader>
-                <CardBody alignContent='center' pad="medium">BODY PROJECT3</CardBody>
-                <CardFooter background='light-3'>
-                    <Tip content='Click here to check this project out!'>
-                        <Button />
-                    </Tip>
-                    <Tip content='Click here to check out the repo!'>
-                        <Button />
-                    </Tip>
-                </CardFooter>
-            </Card>
-
-        </Box>
-
-    </Main>
-
+    <Grid
+  rows={['small', 'small', 'small']}
+  columns={['small', 'medium', 'medium']}
+  gap="small"
+  areas={[
+    { name: 'project 1 title', start: [0, 1], end: [1, 0] },
+    { name: 'project 1 picture', start: [1,1], end:[1,0] },
+    { name: 'project 1 buttons', start: [1,2], end:[2,0] },
+    { name: 'project 2 title', start: [1, 1], end: [1, 1] },
+    { name: 'project 2 picture', start: [2, 1], end: [1, 1] },
+    { name: 'project 2 buttons', start: [2, 1], end: [2, 1] },
+    { name: 'project 3 title', start: [2, 2], end: [1, 2] },
+    { name: 'project 3 pictures', start: [3, 2], end: [1, 2] },
+    { name: 'project 3 buttons', start: [3, 2], end: [2, 2] },
+  ]}
+>
+  <Box gridArea="project 1 title" background="brand" />
+  <Box gridArea="project 1 picture" background="accent-1" />
+  <Box gridArea="project 1 buttons" background="accent-2" />
+  <Box gridArea="project 2 title" background="accent-2" />
+  <Box gridArea="project 2 picture" background="brand" />
+  <Box gridArea="project 2 buttons" background="accent-1" />
+  <Box gridArea="project 3 title" background="accent-1" />
+  <Box gridArea="project 3 picture" background="accent-2" />
+  <Box gridArea="project 3 buttons" background="brand" />
+</Grid>
+  </Main>
   )
 };
+
 
 export default Myprojects;
