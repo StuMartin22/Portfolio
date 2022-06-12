@@ -2,7 +2,7 @@ import { Box, Button, Card, CardBody, CardFooter, CardHeader, Carousel, Heading,
 import { Github, Linkedin, Mail, Phone } from 'grommet-icons';
 
 
-const Contact = () => {
+const Projects = () => {
   return(
 
     <Main>
@@ -55,4 +55,4 @@ const Contact = () => {
   )
 };
 
-export default Contact;
+export default Projects;
