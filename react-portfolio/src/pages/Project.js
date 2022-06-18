@@ -1,34 +1,26 @@
-import { Box, Grid, Main } from 'grommet'
+import { Box, Button, Card, CardBody, CardFooter, CardHeader, Grid, Heading, Main, Text } from 'grommet'
 
 const Myprojects  = () => {
   return(
-    <Main>
-    <Grid
-  rows={['small', 'small', 'small']}
-  columns={['small', 'medium', 'medium']}
-  gap="small"
-  areas={[
-    { name: 'project 1 title', start: [0, 1], end: [1, 0] },
-    { name: 'project 1 picture', start: [1,1], end:[1,0] },
-    { name: 'project 1 buttons', start: [1,2], end:[2,0] },
-    { name: 'project 2 title', start: [1, 1], end: [1, 1] },
-    { name: 'project 2 picture', start: [2, 1], end: [1, 1] },
-    { name: 'project 2 buttons', start: [2, 1], end: [2, 1] },
-    { name: 'project 3 title', start: [2, 2], end: [1, 2] },
-    { name: 'project 3 pictures', start: [3, 2], end: [1, 2] },
-    { name: 'project 3 buttons', start: [3, 2], end: [2, 2] },
-  ]}
->
-  <Box gridArea="project 1 title" background="brand" />
-  <Box gridArea="project 1 picture" background="accent-1" />
-  <Box gridArea="project 1 buttons" background="accent-2" />
-  <Box gridArea="project 2 title" background="accent-2" />
-  <Box gridArea="project 2 picture" background="brand" />
-  <Box gridArea="project 2 buttons" background="accent-1" />
-  <Box gridArea="project 3 title" background="accent-1" />
-  <Box gridArea="project 3 picture" background="accent-2" />
-  <Box gridArea="project 3 buttons" background="brand" />
-</Grid>
+    <Main align='center' flex='true' pad='medium'>
+  <Card width='30vw' height='30vh' pad='medium' elevation='large' margin='auto'>
+    <CardHeader>Project 1</CardHeader>
+    <CardBody> Here's some text</CardBody>
+    <CardFooter><Button>Test1</Button><Button>Test2</Button></CardFooter>
+  </Card>
+
+  <Card width='30vw' height='30vh' pad='medium' elevation='large' margin='auto'>
+    <CardHeader>Project 1</CardHeader>
+    <CardBody> Here's some text</CardBody>
+    <CardFooter><Button>Test1</Button><Button>Test2</Button></CardFooter>
+  </Card>
+
+  <Card width='30vw' height='30vh' pad='medium' elevation='large' margin='auto'>
+    <CardHeader>Project 1</CardHeader>
+    <CardBody> Here's some text</CardBody>
+    <CardFooter><Button>Test1</Button><Button>Test2</Button></CardFooter>
+  </Card>
+
   </Main>
   )
 };
