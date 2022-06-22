@@ -5,10 +5,9 @@ import Headerbar  from './pages/Headerbar'
 import { Grommet } from 'grommet';
 import Mainpage from './pages/Main'
 import myTheme from './mytheme'
-import Contact from './pages/Contact'
 import Myprojects from './pages/Project';
 import Mybio from './pages/About';
-
+import Contact from './pages/Contact';
 
 function App() {
   return (
