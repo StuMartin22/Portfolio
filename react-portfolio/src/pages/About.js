@@ -1,9 +1,12 @@
-import { Box, Grid, Main } from 'grommet'
+import { Main } from 'grommet'
+
 
 const Mybio  = () => {
   return(
-    <Main>
-    </Main>
+    <div>
+        <Main>
+        </Main>
+    </div>
   )
 };
 

@@ -1,27 +1,28 @@
-import { Box, Button, Card, CardBody, CardFooter, CardHeader, Grid, Heading, Main, Text } from 'grommet'
+import { Box, Carousel, Main } from "grommet";
+import { ProjectCard } from "../components/ProjectCard";
 
 const Myprojects  = () => {
   return(
-    <Main align='center' flex='true' pad='medium'>
-  <Card width='30vw' height='30vh' pad='medium' elevation='large' margin='auto'>
-    <CardHeader>Project 1</CardHeader>
-    <CardBody> Here's some text</CardBody>
-    <CardFooter><Button>Test1</Button><Button>Test2</Button></CardFooter>
-  </Card>
-
-  <Card width='30vw' height='30vh' pad='medium' elevation='large' margin='auto'>
-    <CardHeader>Project 1</CardHeader>
-    <CardBody> Here's some text</CardBody>
-    <CardFooter><Button>Test1</Button><Button>Test2</Button></CardFooter>
-  </Card>
-
-  <Card width='30vw' height='30vh' pad='medium' elevation='large' margin='auto'>
-    <CardHeader>Project 1</CardHeader>
-    <CardBody> Here's some text</CardBody>
-    <CardFooter><Button>Test1</Button><Button>Test2</Button></CardFooter>
-  </Card>
-
-  </Main>
+    
+    <Main>
+        <Box>
+            <Carousel>
+                <ProjectCard
+                    HeaderText='Testing One Heading'
+                    BodyText='Testing One Body'
+                    ButtonLink='https://bobbyhadz.com/blog/react-button-link'
+                    ButtonTwoLink='https://bobbyhadz.com/blog/react-button-link'
+                 />
+                <ProjectCard
+                    HeaderText='Testing Two Heading'
+                    BodyText='Testing Two Body'
+                    ButtonLink='https://bobbyhadz.com/blog/react-button-link'
+                    ButtonTwoLink='https://bobbyhadz.com/blog/react-button-link'
+                 />
+                <ProjectCard />
+            </Carousel>
+        </Box>
+    </Main>
   )
 };
 
