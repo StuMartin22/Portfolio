@@ -1,23 +1,10 @@
 import { Box, Button, Card, CardBody, CardFooter, CardHeader, Carousel, Heading, Main, Paragraph, Text, Tip} from 'grommet';
 import { Github, Linkedin, Mail, Phone } from 'grommet-icons';
-
-const myemail = 'stucodes22@gmail.com'
-const myphone = '9188086027'
-
-const emailRunner = () => {
-    navigator.clipboard.writeText(myemail);
-    console.log('copied to clipboard')
-};
-
-const phoneRunner = () => {
-    navigator.clipboard.writeText(myphone);
-    console.log('copied to clipboard')
-};
-
+import emailRunner from '../constants/copyEmailFunction';
+import phoneRunner from '../constants/copyPhoneFunction';
 
 const Contact = () => {
   return(
-
     <Main>
         <Box justifyContent='center' align='center'>
                 <Heading>

@@ -1,12 +1,13 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import  Footerbar  from './pages/Footerbar'
-import  Headerbar  from './pages/Headerbar'
+import Footerbar  from './pages/Footerbar'
+import Headerbar  from './pages/Headerbar'
 import { Grommet } from 'grommet';
 import Mainpage from './pages/Main'
 import myTheme from './mytheme'
-import Contact from './pages/Contact'
-
+import Myprojects from './pages/Project';
+import Mybio from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -23,20 +24,20 @@ function App() {
           element={< Mainpage />}
           />
 
-        {/* <Route
+        <Route
           path="/about"
-          element={< About />}
-          /> */}
+          element={< Mybio />}
+          />
 
           <Route
           path="/contact"
           element={< Contact />}
           />
 
-          {/* <Route
+          <Route
           path="/projects"
-          element={< Projects />}
-          /> */}
+          element={< Myprojects />}
+          />
 
       </Routes>
 
