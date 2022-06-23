@@ -1,9 +1,14 @@
-// import {  } from 'grommet'
+import { Main } from 'grommet'
 
-// const  = () => {
-//   return(
 
-//   )
-// };
+const Mybio  = () => {
+  return(
+    <div>
+        <Main>
+        </Main>
+    </div>
+  )
+};
 
-// export default ;
+
+export default Mybio;
