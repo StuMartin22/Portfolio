@@ -19,7 +19,12 @@ const Myprojects  = () => {
                     ButtonLink='https://bobbyhadz.com/blog/react-button-link'
                     ButtonTwoLink='https://bobbyhadz.com/blog/react-button-link'
                  />
-                <ProjectCard />
+                <ProjectCard
+                    HeaderText='Testing Two Heading'
+                    BodyText='Testing Two Body'
+                    ButtonLink='https://bobbyhadz.com/blog/react-button-link'
+                    ButtonTwoLink='https://bobbyhadz.com/blog/react-button-link'
+                 />
             </Carousel>
         </Box>
     </Main>
