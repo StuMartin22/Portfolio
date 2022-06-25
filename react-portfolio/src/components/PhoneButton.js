@@ -1,6 +1,8 @@
 import phoneRunner from "../constants/copyPhoneFunction";
+import { Tip, Button, } from "grommet";
+import { Phone } from "grommet-icons";
 
-export const NameHere = (props) => {
+export const PhoneButton = (props) => {
 return(
     <Tip content='Click here to copy!'>
     <Button align='center'
