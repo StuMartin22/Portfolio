@@ -1,11 +1,10 @@
 import { Box, Carousel, Heading, Main, Paragraph } from 'grommet';
 import { ContactCard } from '../components/ContactCard'
-import { MailButton } from '../components/MailButton';
 
 const Contact = () => {
     return (
         <Main>
-            <Box justifyContent='center' align='center'>
+            <Box justifyContent='center' align='center' wrap='true' responsive={true} flex={true}>
                 <Heading>
                     How to contact me!
                 </Heading>

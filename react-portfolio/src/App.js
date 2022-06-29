@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footerbar  from './pages/Footerbar'
-import Headerbar  from './pages/Headerbar'
+import Footerbar  from './components/Footerbar'
+import Headerbar  from './components/Headerbar'
 import { Grommet } from 'grommet';
 import Mainpage from './pages/Main'
 import myTheme from './mytheme'
@@ -11,39 +11,39 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Grommet full theme={myTheme}>
-
-    <Router>
-
-      <Headerbar />
+    <Grommet full='true' theme={myTheme}>
       
-      <Routes>
+      <Router>
+    
+        <Headerbar />
+      
+        <Routes>
 
-        <Route 
-          path="/" 
-          element={< Mainpage />}
-          />
-
-        <Route
-          path="/about"
-          element={< Mybio />}
-          />
-
-          <Route
-          path="/contact"
-          element={< Contact />}
-          />
+          <Route 
+            path="/" 
+            element={< Mainpage />}
+            />
 
           <Route
-          path="/projects"
-          element={< Myprojects />}
-          />
+            path="/about"
+            element={< Mybio />}
+            />
 
-      </Routes>
+            <Route
+            path="/contact"
+            element={< Contact />}
+            />
 
-      <Footerbar />
+            <Route
+            path="/projects"
+            element={< Myprojects />}
+            />
 
-    </Router>
+        </Routes>
+
+        <Footerbar />
+
+      </Router>
 
     </Grommet>
   );
