@@ -6,12 +6,13 @@ import { ToolTipAccent } from "./ToolTipAccent";
 export const MailButton = (props) => {
     return (
         <>
-        < ToolTipAccent tipMessage='Click here to copy my email!' />
+        <ToolTipAccent tipMessage='Click here to copy my email!' >
         <Button align='center'
             icon={<Mail color='accent-1' size={props.iconsize} />}
             hoverIndicator
             onClick={emailRunner}
         />
+        </ToolTipAccent>
         </>
     )
 };

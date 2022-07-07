@@ -6,11 +6,12 @@ import { ToolTipAccent } from './ToolTipAccent'
 export const PhoneButton = (props) => {
 return(
     <>
-    <ToolTipAccent tipMessage='Click here to copy my phone number!' />
+    <ToolTipAccent tipMessage='Click here to copy my phone number!'>
     <Button align='center'
         icon={<Phone color="accent-1" size={props.iconsize}/>}
         hoverIndicator
         onClick= { phoneRunner }
     />
+    </ToolTipAccent>
     </>
 )};

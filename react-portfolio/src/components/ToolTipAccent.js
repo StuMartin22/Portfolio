@@ -14,10 +14,12 @@ export const ToolTipAccent = (props) => {
             flex={true}
             wrap='true'
         >
-            <Text color="brand">{props.tipMessage}</Text>
+            <Text color="brand" className="tipMessage">{props.tipMessage}</Text>
         </Box>
     } 
->
+>{props.children}
 </Tip>
     )
 };
+
+// {props.tipMessage}
