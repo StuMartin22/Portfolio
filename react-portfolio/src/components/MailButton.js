@@ -1,15 +1,18 @@
-import { Button, Tip } from "grommet";
+import { Button } from "grommet";
 import { Mail } from "grommet-icons";
 import emailRunner from "../constants/copyEmailFunction";
+import { ToolTipAccent } from "./ToolTipAccent";
 
-export const MailButton = () => {
+export const MailButton = (props) => {
     return (
-        <Tip content='Click here to copy!'>
+        <>
+        <ToolTipAccent tipMessage='Click here to copy my email!' >
         <Button align='center'
-            icon={<Mail color="accent-1" size='large' />}
+            icon={<Mail color='accent-1' size={props.iconsize} />}
             hoverIndicator
             onClick={emailRunner}
         />
-        </Tip>
+        </ToolTipAccent>
+        </>
     )
 };

@@ -1,14 +1,17 @@
 import phoneRunner from "../constants/copyPhoneFunction";
-import { Tip, Button, } from "grommet";
+import { Button, } from "grommet";
 import { Phone } from "grommet-icons";
+import { ToolTipAccent } from './ToolTipAccent'
 
 export const PhoneButton = (props) => {
 return(
-    <Tip content='Click here to copy!'>
+    <>
+    <ToolTipAccent tipMessage='Click here to copy my phone number!'>
     <Button align='center'
-    icon={<Phone color="accent-1" size='large' />}
-    hoverIndicator
-    onClick= { phoneRunner }
+        icon={<Phone color="accent-1" size={props.iconsize}/>}
+        hoverIndicator
+        onClick= { phoneRunner }
     />
-</Tip>
+    </ToolTipAccent>
+    </>
 )};

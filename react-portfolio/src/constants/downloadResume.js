@@ -1,6 +1,6 @@
-// const phoneRunner = () => {
+// const resumeRunner = () => {
     
 //     console.log('copied to clipboard')
 // };
 
-// export default phoneRunner;
+// export default resumeRunner;
