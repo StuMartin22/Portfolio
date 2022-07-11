@@ -1,10 +1,9 @@
-import { Anchor, Footer, Text, Tip, Box } from 'grommet'
+import { Anchor, Footer, Text } from 'grommet'
 import { GitButton } from './GitHubButton'
 import { LinkedInButton } from './LinkedInButton'
 import { PhoneButton } from './PhoneButton'
 import { MailButton } from './MailButton'
-import { ResumeButton } from './ResumeButton'
-import { ToolTipAccent } from './ToolTipAccent'
+// import { ResumeButton } from './ResumeButton'
 
 
 const Footerbar = () => {
