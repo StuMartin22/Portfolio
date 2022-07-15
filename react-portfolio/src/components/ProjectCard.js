@@ -1,14 +1,18 @@
-import { Card, CardHeader, CardBody, CardFooter, Button } from "grommet";
+import { Button, Card, CardHeader, CardBody, CardFooter, Text } from "grommet";
 
 export const ProjectCard = (props) => {
     return (
-        <Card justify='center' align='center' background='light-3' border={{'color':'dark-5', 'size':'medium'}} elevation='large' margin='auto'>
-            <CardHeader justify='center' pad='small' className='HeaderText'>{props.HeaderText}</CardHeader>
-            <CardBody alignContent='center' pad='medium' className='BodyText'>{props.BodyText}</CardBody>
-            <CardFooter background='light-3'>
-                <a className='ButtonLink' href={props.ButtonLink}><Button>View App</Button></a>
-                <a className='ButtonTwoLink' href={props.ButtonTwoLink}><Button>View Repo</Button></a>
-            </CardFooter>
-        </Card>
+            <Card width={{ max:'60vw', min:'small' }} wrap='true' justify='center' align='center' background='light-3' border={{'color':'brand', 'size':'medium'}}>
+              <CardHeader justify='center' pad="small" wrap='true'>
+                <Text size='large' weight='bold'>{props.HeaderText}</Text>
+              </CardHeader>
+              <CardBody className='BodyText' wrap='true' alignContent='center' pad="medium" justify='center'>
+              {props.BodyText}
+              </CardBody>
+              <CardFooter background='light-3' wrap='true'>
+                <Button primary='true' className='LiveLink' label='View App' href={props.ButtonLink} />
+                <Button secondary='true' className='RepoLink' label='View Repo' href={props.ButtonTwoLink}  />
+              </CardFooter>
+            </Card>
     )
 };

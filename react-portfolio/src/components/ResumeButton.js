@@ -9,8 +9,7 @@ export const ResumeButton = (props) => {
             <Button align='center'
                 icon={<Download color='accent-1' size={props.iconsize} />}
                 hoverIndicator
-                href=""
-                // onClick={href=}
+                href="https://docs.google.com/document/d/1Zakz9HDfh7Ahir-8x-2MoVvrPoPeWdEwbMzSjJm7-9U/export?format=pdf"
             />
         </ToolTipAccent>
         </>

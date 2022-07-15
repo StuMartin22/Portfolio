@@ -8,7 +8,7 @@ return(
     <>
     <ToolTipAccent tipMessage='Click here to copy my phone number!'>
     <Button align='center'
-        icon={<Phone color="accent-1" size={props.iconsize}/>}
+        icon={<Phone color="accent-1" size={props.IconSize}/>}
         hoverIndicator
         onClick= { phoneRunner }
     />

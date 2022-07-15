@@ -11,7 +11,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Grommet full='true' theme={myTheme}>
+    <Grommet theme={myTheme}>
       
       <Router>
     
