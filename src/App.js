@@ -14,8 +14,10 @@ function App() {
     <Grommet theme={myTheme}>
       
       <HashRouter>
-
+    
         <Headerbar />
+      
+        <Routes>
 
           <Route 
             path="/" 
@@ -36,6 +38,8 @@ function App() {
             path="/projects"
             component={< Myprojects />}
             />
+
+        </Routes>
 
         <Footerbar />
 
