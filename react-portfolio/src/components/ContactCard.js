@@ -3,6 +3,7 @@ import { MailButton } from "./MailButton";
 import { PhoneButton } from "./PhoneButton";
 import { GitButton } from "./GitHubButton";
 import { LinkedInButton } from "./LinkedInButton";
+import { ResumeButton } from "./ResumeButton";
 
 export const ContactCard = (props) => {
     return(
@@ -16,7 +17,8 @@ export const ContactCard = (props) => {
                 {(props.HeaderText === 'Email' && <MailButton IconSize='large' />)
                 ||(props.HeaderText === 'Phone' && <PhoneButton IconSize='large'/>)
                 ||(props.HeaderText === 'GitHub' && <GitButton IconSize='large'/>)
-                ||(props.HeaderText === 'LinkedIn' && <LinkedInButton IconSize='large'/>)}
+                ||(props.HeaderText === 'LinkedIn' && <LinkedInButton IconSize='large'/>)
+                ||(props.HeaderText === 'Resume' && <ResumeButton IconSize='large'/>)}
             </div>
         </CardFooter>
 </Card>

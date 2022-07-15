@@ -1,4 +1,4 @@
-import { Box, Carousel, Heading, Main, PageContent, Page, Paragraph } from 'grommet';
+import { Carousel, Heading, Main, PageContent, Page, Paragraph } from 'grommet';
 import { ContactCard } from '../components/ContactCard'
 
 const Contact = () => {
@@ -29,6 +29,10 @@ const Contact = () => {
                         <ContactCard
                             HeaderText='LinkedIn'
                             BodyText='Click the icon to connect on LinkedIn!'
+                        />
+                        <ContactCard
+                            HeaderText='Resume'
+                            BodyText='Click here to download a copy of my resume!'
                         />
                     </Carousel>
             </Page>
