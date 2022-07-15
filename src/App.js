@@ -14,32 +14,28 @@ function App() {
     <Grommet theme={myTheme}>
       
       <HashRouter>
-    
+
         <Headerbar />
-      
-        <Routes>
 
           <Route 
             path="/" 
-            element={< Mainpage />}
+            component={< Mainpage />}
             />
 
           <Route
             path="/about"
-            element={< Mybio />}
+            component={< Mybio />}
             />
 
             <Route
             path="/contact"
-            element={< Contact />}
+            component={< Contact />}
             />
 
             <Route
             path="/projects"
-            element={< Myprojects />}
+            component={< Myprojects />}
             />
-
-        </Routes>
 
         <Footerbar />
 
