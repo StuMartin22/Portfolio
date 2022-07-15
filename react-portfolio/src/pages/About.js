@@ -3,12 +3,12 @@ import { Heading, Main, Paragraph, Page, PageContent } from 'grommet'
 
 const Mybio = () => {
   return (
-    <Main pad="small" align='center' justify='center' flex='true' responsive='true' wrap='true'>
+    <Main pad="small" align='center' justify='center' flex='true' responsive='true' wrap='true' height={{min:'100vh'}}>
       <Page kind="narrow" align='center'>
-        <PageContent background="light-3" elevation='large' align='center' width={{ min: 'auto', max: '80vw' }} margin={{bottom:'3vh'}} border={{ size: '3px', color: 'brand' }} round='medium' justify='center' responsive={true}>
+        <PageContent background="light-3" elevation='large' align='center' width={{ min: 'auto', max: '80vw' }} margin={{bottom:'3vh'}} border={{ size: '3px', color: 'brand' }} round='small' justify='center' responsive={true}>
           <Heading responsive={true}>My Bio</Heading>
         </PageContent>
-        <PageContent background="light-3" elevation='large' align='center' width={{ min: 'auto', max: '80vw' }} overflow='auto' border={{ size: '3px', color: 'brand' }} round='medium'>
+        <PageContent background="light-3" elevation='large' align='center' width={{ min: 'auto', max: '80vw' }} overflow='auto' border={{ size: '3px', color: 'brand' }} round='small'>
           <Paragraph fill='true' textAlign='center' justify='center'>
             I graduated from Rogers State University in 2017 with a Bachelor's of Science in Biology -  Environmental Conservation where I received the award of Best Senior Research Capstone for the program that year.
           </Paragraph>

@@ -8,7 +8,7 @@ export const MailButton = (props) => {
         <>
         <ToolTipAccent tipMessage='Click here to copy my email!' >
         <Button align='center'
-            icon={<Mail color='accent-1' size={props.iconsize} />}
+            icon={<Mail color='accent-1' size={props.IconSize} />}
             hoverIndicator
             onClick={emailRunner}
         />

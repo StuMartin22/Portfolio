@@ -4,7 +4,7 @@ import { Home } from 'grommet-icons'
 
 const Headerbar = () => {
   return (
-    <Header background="brand" pad="small" position="absolute" responsive={true}>
+    <Header background="brand" pad="small" position="absolute" responsive={true} align="center" alignContent="center">
       <Button icon={<Home color='accent-1' />} hoverIndicator href='/' />
       {/* <Button icon={<Sun />} color="accent-1" size="small" plain={false} tip="Toggle theme between dark and light!" type="button" /> */}
       <Menu label="Menu" color='accent-1' hoverIndicator

@@ -9,7 +9,7 @@ import { MailButton } from './MailButton'
 const Footerbar = () => {
   return (
     <div>
-      <Footer pad="small" background={{ "color": "brand", "position": "bottom, sticky" }} responsive='true' wrap='true' overflow='auto'>
+      <Footer pad="small" background={{ color: "brand" }} responsive='true' wrap='true' align='center' alignContent='center' position='absolute' margin={{bottom:'0'}}>
         <Text>Contact me:</Text>
         <GitButton iconsize='medium' />
         <LinkedInButton iconsize='medium' />
@@ -18,7 +18,7 @@ const Footerbar = () => {
         {/* <ResumeButton iconsize='medium' />  */}
         <Anchor label="Home" href="/" hoverIndicator />
       </Footer>
-      </div>
+    </div>
   )
 };
 
