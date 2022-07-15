@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import Footerbar  from './components/Footerbar'
-import Headerbar  from './components/Headerbar'
+import Footerbar  from './components/Footerbar';
+import Headerbar  from './components/Headerbar';
 import { Grommet } from 'grommet';
-import Mainpage from './pages/Main'
-import myTheme from './mytheme'
+import Mainpage from './pages/Main';
+import myTheme from './mytheme';
 import Myprojects from './pages/Project';
 import Mybio from './pages/About';
 import Contact from './pages/Contact';
@@ -13,7 +13,7 @@ function App() {
   return (
     <Grommet theme={myTheme}>
       
-      <HashRouter>
+      <HashRouter HashType='slash'>
     
         <Headerbar />
       
