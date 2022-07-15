@@ -1,4 +1,4 @@
-import { Box, Carousel, Heading, Main, Page, PageContent, Paragraph } from "grommet";
+import { Carousel, Heading, Main, Page, PageContent, Paragraph } from "grommet";
 import { ProjectCard } from "../components/ProjectCard";
 
 const Myprojects = () => {
