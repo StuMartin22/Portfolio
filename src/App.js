@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Route, Router, Routes } from 'react-router-dom';
 import Footerbar  from './components/Footerbar';
 import Headerbar  from './components/Headerbar';
 import { Grommet } from 'grommet';
@@ -13,7 +13,7 @@ function App() {
   return (
     <Grommet theme={myTheme}>
       
-      <HashRouter>
+      <Router>
     
         <Headerbar />
       
@@ -43,7 +43,7 @@ function App() {
 
         <Footerbar />
 
-      </HashRouter>
+      </Router>
 
     </Grommet>
   );
