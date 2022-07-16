@@ -13,7 +13,7 @@ function App() {
   return (
     <Grommet theme={myTheme}>
       
-      <HashRouter HashType='slash'>
+      <HashRouter>
     
         <Headerbar />
       
