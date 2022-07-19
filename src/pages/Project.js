@@ -34,8 +34,7 @@ const Myprojects = () => {
                     />
                     <ProjectCard
                         HeaderText='Weather App'
-                        BodyText='
-                        A small app designed to help the user find out the current weather, and 5 day weather conditions for a searched location.
+                        BodyText='A small app designed to help the user find out the current weather, and 5 day weather conditions for a searched location.
                             
                             This is a weather dashboard that pulls information from an API and displays it on the page. Originally written in basic HTML, CSS, and JavaScript but I am currently working on adapting it into a react application while refactoring the current functionality.'
                         LiveLink='https://stumartin22.github.io/weather-app/'
