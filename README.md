@@ -49,8 +49,17 @@
   ---
   
   <h1 align="center" id="images">Images and Videos</h1>
+  <h2 align='center'> This is an image of hardcoded html from my first attempt at a portfolio a couple of weeks into my bootcamp program. </h2>
+
+  ![Image of hard coded html from first attempt at a portfolio. Image of hard coded html from first attempt at a portfolio.]( ./public/images/IMG_3076.png "Bad Coding")
   
-  `![Image of hard coded html from first attempt at a portfolio. Image of hard coded html from first attempt at a portfolio.]( ./public/images/IMG_3076.png "Bad Coding")` `![Image of current react iteration of portfolio top of screen header and content. Image of current react iteration of portfolio top of screen header and content.]( ./public/images/Screen%20Shot%202022-07-15%20at%201.39.55%20PM.png "Current Top")``![Image of footer and content of current react portfolio. Image of footer and content of current react portfolio.]( ./public/images/Screen%20Shot%202022-07-15%20at%201.40.06%20PM.png "Current Bottom")`
+  <h2 align='center'> This is an image of the current header / main page of portfolio. </h2>
+
+  ![Image of current react iteration of portfolio top of screen header and content. Image of current react iteration of portfolio top of screen header and content.]( ./public/images/Screen%20Shot%202022-07-15%20at%201.39.55%20PM.png "Current Top") 
+
+<h2 align='center'> This image is of the footer / main page of portfolio </h2>
+
+  ![Image of footer and content of current react portfolio. Image of footer and content of current react portfolio.]( ./public/images/Screen%20Shot%202022-07-15%20at%201.40.06%20PM.png "Current Bottom")
   
   ---
   
