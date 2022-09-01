@@ -2,6 +2,11 @@ import { searchBar } from "../components/WeatherSearch";
 import {Main, Page, PageContent, Heading, Paragraph } from grommet
 
 const Weather = () => {
+
+    const handleOnSearchChange = (searchData) => {
+        console.log(searchData)
+    }
+
     return(
         <Main pad="small" align='center' justify='center' flex='true' responsive='true' wrap='true' height={{min:'100vh'}} >
         <Page kind="narrow" align='center'>
@@ -12,7 +17,7 @@ const Weather = () => {
             <Paragraph>
               This is a little app built using React, the CSS library grommet, OpenWeatherMapsAPI data, 
             </Paragraph>
-            <searchBar />
+            <searchBar onSearchChange={handleOnSearchChange} />
           </PageContent>
         </Page>
       </Main>
