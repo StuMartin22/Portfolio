@@ -39,6 +39,11 @@ function App() {
             element={< Myprojects />}
             />
 
+            <Route
+            path="/weather"
+            element={< Weather />}
+            />
+
         </Routes>
 
         <Footerbar />
