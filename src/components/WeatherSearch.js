@@ -8,7 +8,16 @@ const searchBar = ({onSearchChange}) => {
     const loadOptions = (searchInput) => {
         return fetch(`${LocationAPI}/cities?limit=5&minPopulation=10000&namePrefix=${searchInput}`, LocationAPI_URL)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => {
+            return {
+                options: response.data.map((city) => {
+                    return {
+                        value: `${city.lat} ${city.long}`,
+                        label: `${city.name}, ${city.regionCode}, ${city.countryCode} `,
+                    }
+                })
+            }
+        })
         .catch(err => console.error(err));
     }
 
