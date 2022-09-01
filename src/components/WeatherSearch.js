@@ -1,4 +1,4 @@
-const searchBar = () => {
+const searchBar = (props) => {
     return ('hello')
 }
 
