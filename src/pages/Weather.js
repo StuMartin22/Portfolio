@@ -1,3 +1,4 @@
+import CurrentWeather from "../components/currentWeather";
 import { searchBar } from "../components/WeatherSearch";
 import {Main, Page, PageContent, Heading, Paragraph } from grommet
 
@@ -18,6 +19,7 @@ const Weather = () => {
               This is a little app built using React, the CSS library grommet, OpenWeatherMapsAPI data, 
             </Paragraph>
             <searchBar onSearchChange={handleOnSearchChange} />
+            <CurrentWeather />
           </PageContent>
         </Page>
       </Main>
