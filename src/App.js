@@ -8,6 +8,7 @@ import myTheme from './mytheme'
 import Myprojects from './pages/Project';
 import Mybio from './pages/About';
 import Contact from './pages/Contact';
+import Weather from './pages/Weather'
 
 function App() {
   return (
@@ -38,6 +39,11 @@ function App() {
             path="/projects"
             element={< Myprojects />}
             />
+
+            {/* <Route
+            path="/weather"
+            element={< Weather />}
+            /> */}
 
         </Routes>
 
