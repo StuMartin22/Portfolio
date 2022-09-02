@@ -40,10 +40,10 @@ function App() {
             element={< Myprojects />}
             />
 
-            <Route
+            {/* <Route
             path="/weather"
             element={< Weather />}
-            />
+            /> */}
 
         </Routes>
 
