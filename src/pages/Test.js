@@ -26,6 +26,6 @@ const Mytest = () => {
             {/* </Box> */}
         </Page>
     </Main>
-    )}
+    )};
 
     export default Mytest;
