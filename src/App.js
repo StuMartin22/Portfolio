@@ -8,7 +8,7 @@ import myTheme from './mytheme'
 import Myprojects from './pages/Project';
 import Mybio from './pages/About';
 import Contact from './pages/Contact';
-import Mytest from './pages/Test';
+// import Mytest from './pages/Test';
 // import Weather from './pages/Weather'
 
 function App() {
@@ -41,10 +41,10 @@ function App() {
             element={< Myprojects />}
             />
 
-            <Route
+            {/* <Route
             path="/test"
             element={< Mytest />}
-            />
+            /> */}
 
             {/* <Route
             path="/weather"

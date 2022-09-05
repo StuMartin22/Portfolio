@@ -1,5 +1,5 @@
-import { Heading, Main, Paragraph, Page, PageContent } from 'grommet'
-
+import { Box, Heading, Main, Paragraph, Page, PageContent } from 'grommet'
+import Badge from '../components/CredlyBadge';
 
 const Mybio = () => {
   return (
@@ -24,12 +24,14 @@ const Mybio = () => {
           <Paragraph fill='true' textAlign='center' justify='center'>
             I am now graduated from my intensive full stack development bootcamp through the University of  Minnesota and excited to continue with this new venture of a lifelong passion of technology that satisfied the depth of my brain and it’s love of puzzles!
           </Paragraph>
-          <Paragraph fill = 'true' textAlign='center' justify='center'>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="c1ec2177-a4f4-414c-a518-5f346c203876" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-          </Paragraph>
+          {/* <Paragraph fill = 'true' textAlign='center' justify='center'> */}
+          {/* <Box height="small" width="small">
+            <Badge/>
+          </Box> */}
+          {/* </Paragraph> */}
           <Paragraph fill='true' textAlign='center' justify='center'>
             Languages and technologies I’ve worked with include:
-            HTML, CSS, bootstrap (and other similar CSS frameworks), JavaScript, node.js, MySQL, Sequelize,   NoSQL, MongoDB, Mongoose, Insomnia, GraphQL, and React!
+            HTML, CSS, bootstrap (and other similar CSS frameworks), JavaScript, node.js, MySQL, Sequelize, NoSQL, MongoDB, Mongoose, Insomnia, GraphQL, and React!
           </Paragraph>
         </PageContent>
       </Page>
