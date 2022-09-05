@@ -40,10 +40,15 @@ function App() {
             element={< Myprojects />}
             />
 
+            <Route
+            path="/test"
+            element={< Mytest />}
+            />
+
             {/* <Route
             path="/weather"
             element={< Weather />}
-            /> */}
+            /> */ }
 
         </Routes>
 
