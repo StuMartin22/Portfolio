@@ -1,6 +1,6 @@
 // import CurrentWeather from "../components/CurrentWeather";
 // import SearchBar from "../components/WeatherSearch";
-import { Main, Page, PageContent, Heading, Paragraph } from "grommet";
+import { Main, Page, PageContent, Heading } from "grommet";
 // import { WeatherAPICall_URL, WeatherKEY } from "../constants/api_fetch";
 // import { useState } from "react";
 
