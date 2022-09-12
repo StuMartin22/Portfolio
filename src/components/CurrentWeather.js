@@ -19,11 +19,11 @@ const CurrentWeather = () => {
             <CardFooter background="light-2" padding={{right:'small', left:'small' }}>
                 <Paragraph> 
                     <Text weight='bold' margin={{right:'1vh'}}>High:</Text>
-                    <Text className="WeatherHighTemp">75°</Text>
+                    <Text className="WeatherHighTemp" size='large'>75°</Text>
                 </Paragraph>
                 <Paragraph>
                     <Text weight='bold' margin={{right:'1vh'}}> Low:</Text>
-                    <Text className="WeatherLowTemp">69°</Text>
+                    <Text className="WeatherLowTemp" size='large'>69°</Text>
                 </Paragraph>
             </CardFooter>
         </Card>
