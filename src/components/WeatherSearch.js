@@ -22,10 +22,6 @@ const SearchBar = ({onSearchChange}) => {
         .catch(err => console.error(err));
     }
 
-    // const handleOnSearchChange = (searchData) => {
-    //     console.log(searchData)
-    // }
-
     const handleOnChange = (searchData) => {
         setSearch(searchData);
         onSearchChange(searchData);
