@@ -2,9 +2,9 @@ import { Main, Page, PageContent, Heading, Paragraph } from 'grommet'
 
 const Mainpage = () => {
   return (
-    <Main pad="small" align='center' justify='center' flex='true' responsive='true' wrap='true' height={{min:'100vh'}} >
+    <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{min:'100vh'}} width={{min:'190px'}}>
       <Page kind="narrow" align='center'>
-        <PageContent background="light-3" elevation='large' align='center' width={{min:'auto', max:'80vw'}} border={{size:'medium', color:'brand'}} round='small'>
+        <PageContent background="light-3" elevation='large' align='center' width={{min:'190px', max:'80vw'}} border={{size:'medium', color:'brand'}} round='small'>
           <Heading>
             Welcome to my portfolio!
           </Heading>

@@ -12,7 +12,7 @@ export const ToolTipAccent = (props) => {
             pad="xsmall"
             round="medium"
             flex={true}
-            wrap='true'
+            wrap={true}
         >
             <Text color="brand" className="tipMessage">{props.tipMessage}</Text>
         </Box>

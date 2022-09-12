@@ -1,20 +1,33 @@
-// import { grommet, Paragraph } from "grommet";
-// import { } from grommet
+// import { Card, CardHeader, CardBody, CardFooter, Paragraph, Text } from "grommet";
+// import { Cloud } from "grommet-icons";
 
-// const CurrentWeather = () => {
+// const CurrentWeather = ({data}) => {
 //     return (
-//         <Card width="medium" background="light-1">
-//             <CardHeader alignSelf='center' pad='medium' fill='horizontal' background='light-2' className="Date">Weather Outlook for Today: </CardHeader>
+//         <Card width={{ max:'60vw', min:'small' }} height={{min:'auto'}} wrap={true} justify='center' align='center' background='light-2' border={{'color':'brand', 'size':'medium'}}>
+//             <CardHeader alignSelf='center' pad='medium' fill='horizontal' background='dark-2' className="Date">
+//             <Text size='large' weight='bolder'>Weather Outlook for Today: </Text>
+//             </CardHeader>
 //             <CardBody alignSelf='center'>
-//                 <Paragraph className="WeatherCurrentTemp">The Current Temperature is: 72 </Paragraph>
-//                 <Paragraph className="WeatherTypeIcon">Cloudy <Icons.Cloud color="blue" /></Paragraph>
+//                 <Paragraph>
+//                     <Text weight='bold' margin={{right:'1vh'}}>The Current Temperature is:</Text> 
+//                     <Text className="WeatherCurrentTemp" size='xx-large'>{data.city.main[3]}°</Text>
+//                 </Paragraph>
+//                 <Paragraph alignSelf='center' className="WeatherTypeIcon">
+//                     <Cloud color="brand" size='large' />
+//                 </Paragraph>
 //             </CardBody>
-//             <CardFooter fill='horizontal' background="light-2">
-//                 <Paragraph className="WeatherHighTemp"> High: 79</Paragraph>
-//                 <Paragraph className="WeatherLowTemp"> Low: 69</Paragraph>
+//             <CardFooter background="light-2" padding={{right:'small', left:'small' }}>
+//                 <Paragraph> 
+//                     <Text weight='bold' margin={{right:'1vh'}}>High:</Text>
+//                     <Text className="WeatherHighTemp" size='large'>75°</Text>
+//                 </Paragraph>
+//                 <Paragraph>
+//                     <Text weight='bold' margin={{right:'1vh'}}> Low:</Text>
+//                     <Text className="WeatherLowTemp" size='large'>69°</Text>
+//                 </Paragraph>
 //             </CardFooter>
 //         </Card>
 //     )
 // };
 
-// export default CurrentWeather
+// export default CurrentWeather;

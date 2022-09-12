@@ -9,7 +9,7 @@ import Myprojects from './pages/Project';
 import Mybio from './pages/About';
 import Contact from './pages/Contact';
 // import Mytest from './pages/Test';
-// import Weather from './pages/Weather'
+import Weather from './pages/Weather'
 
 function App() {
   return (
@@ -46,10 +46,10 @@ function App() {
             element={< Mytest />}
             /> */}
 
-            {/* <Route
+            <Route
             path="/weather"
             element={< Weather />}
-            /> */ }
+            />
 
         </Routes>
 

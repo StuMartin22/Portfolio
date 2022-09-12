@@ -4,10 +4,9 @@ import { ProjectCard } from "../components/ProjectCard";
 const Myprojects = () => {
     return (
 
-        <Main pad="small" align='center' justify='center' flex='true' responsive='true' wrap='true' height={{ min: '100vh' }}>
+        <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }}>
             <Page kind="narrow" align='center'>
-                <PageContent background="light-3" elevation='large' align='center' width={{ min: '178px', max: '80vw' }} border={{ size: 'medium', color: 'brand' }} round='small' margin={{ bottom: '3vh' }}>
-                    {/* <Box justifyContent='center' align='center' flex={true} responsive={true}> */}
+                <PageContent background="light-3" elevation='large' align='center' width={{ min: '190px', max: '80vw' }} border={{ size: 'medium', color: 'brand' }} round='small' margin={{ bottom: '3vh' }}>
                     <Heading>
                         Previous Work!
                     </Heading>
@@ -15,7 +14,7 @@ const Myprojects = () => {
                         Here is a collection of projects that I have worked on or am beginning to continue development on. I will state in the body texts under each project section what is in progress so its apparent! Feel free to get in contact with me if you have suggestions or would like to fork or contribute the repository!
                     </Paragraph>
                 </PageContent>
-                <Carousel controls='arrows' wrap='true' margin={{ bottom: '2vh' }} width={{ min: 'small' }} elevation='large'>
+                <Carousel controls='arrows' wrap={true} margin={{ bottom: '2vh' }} width={{ min: 'small' }} >
                     <ProjectCard
                         HeaderText='National Park Explorer'
                         BodyText='A collaborative full stack website project designed to help you find out more about National Parks. Not sure where to go? See tons of information about lots of parks and view comments other users have made. 
@@ -41,7 +40,6 @@ const Myprojects = () => {
                         RepoLink='https://github.com/StuMartin22/weather-app'
                     />
                 </Carousel>
-                {/* </Box> */}
             </Page>
         </Main>
     )

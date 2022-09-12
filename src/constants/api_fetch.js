@@ -7,3 +7,7 @@
 //     };
 
 // export const LocationAPI_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo";
+
+// export const WeatherAPICall_URL = "https://api.openweathermap.org/data/2.5";
+
+// export const WeatherKEY = "7395305ec624eec55c8c9f460f751d9d";
