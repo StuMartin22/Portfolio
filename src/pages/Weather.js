@@ -1,4 +1,5 @@
 import CurrentWeather from "../components/WeatherApp/CurrentWeather/CurrentWeather";
+import FutureWeather from "../components/WeatherApp/FutureWeather/FutureWeather";
 import SearchBar from "../components/WeatherApp/WeatherSearch";
 import { Heading, Main, Page, PageContent, Paragraph} from "grommet";
 import { WeatherAPICall_URL, WeatherKEY } from "../constants/api_fetch";
@@ -42,6 +43,7 @@ const Weather = () => {
                     <SearchBar onSearchChange={handleOnSearchChange} />
                 </PageContent>
                 { WeatherNow && <CurrentWeather data={WeatherNow} />} 
+                <FutureWeather />
             </Page>
         </Main>
 
