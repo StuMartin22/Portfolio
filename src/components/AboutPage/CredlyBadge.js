@@ -1,5 +1,5 @@
 import React from 'react';
-import CredlyBadge from '../images/full-stack-web-development-certificate-coding-boot-camp.png';
+import CredlyBadge from '../../images/CredlyBadge/full-stack-web-development-certificate-coding-boot-camp.png';
 
 //return image imported from above
 function Badge() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import BrokenClouds from '../images/clouds-pngrepo-com.png';
+import BrokenClouds from '../../../images/WeatherIcons/clouds-pngrepo-com.png';
 
 //return image imported from above
 function Cloudy() {

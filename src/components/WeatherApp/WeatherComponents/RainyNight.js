@@ -1,5 +1,5 @@
 import React from 'react';
-import RainNight from '../images/night-rain-pngrepo-com.png';
+import RainNight from '../../../images/WeatherIcons/night-rain-pngrepo-com.png';
 
 //return image imported from above
 function NightRain() {

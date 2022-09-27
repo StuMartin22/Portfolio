@@ -1,5 +1,5 @@
 import { Carousel, Heading, Main, PageContent, Page, Paragraph } from 'grommet';
-import { ContactCard } from '../components/ContactCard'
+import { ContactCard } from '../components/ContactPage/ContactCard'
 
 const Contact = () => {
     return (

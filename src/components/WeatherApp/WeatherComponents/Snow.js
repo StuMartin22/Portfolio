@@ -1,5 +1,5 @@
 import React from 'react';
-import Snow from '../images/snow-pngrepo-com.png';
+import Snow from '../../../images/WeatherIcons/snow-pngrepo-com.png';
 
 //return image imported from above
 function Snowy() {

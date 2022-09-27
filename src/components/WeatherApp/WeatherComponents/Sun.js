@@ -1,5 +1,5 @@
 import React from 'react';
-import Sunny from '../images/sun-pngrepo-com.png';
+import Sunny from '../../../images/WeatherIcons/sun-pngrepo-com.png';
 
 //return image imported from above
 function Sun() {

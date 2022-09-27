@@ -1,7 +1,7 @@
 // importing styled components from Grommet
 import { Heading, Main, Paragraph, Page, PageContent } from 'grommet'
 // import Badge component
-import Badge from '../components/CredlyBadge';
+import Badge from '../components/AboutPage/CredlyBadge';
 
 // function to return page info. 
 const Mybio = () => {

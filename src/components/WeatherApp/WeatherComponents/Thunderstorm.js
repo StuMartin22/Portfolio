@@ -1,5 +1,5 @@
 import React from 'react';
-import ThunderStormIcon from '../images/storm-pngrepo-com.png';
+import ThunderStormIcon from '../../../images/WeatherIcons/storm-pngrepo-com.png';
 
 //return image imported from above
 function ThunderStorm() {

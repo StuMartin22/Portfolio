@@ -1,16 +1,16 @@
 import { Box, Card, CardHeader, CardBody, CardFooter, Paragraph, Text } from "grommet";
-import PartCloud from '../components/PartlyCloudyDay'
-import PartCloudNight from "./PartlyCloudyNight";
-import Cloudy from "./BrokenClouds";
-import Rain from "./Rain";
-import NightRain from "./RainyNight";
-import DayRain from "./RainyDay";
-import ThunderStorm from "./Thunderstorm";
-import Snowy from "./Snow";
-import Fog from "./Atmosphere";
-import SingleCloud from "./Cloud";
-import Sun from "./Sun";
-import Moon from "./Moon";
+import PartCloud from '../WeatherComponents/PartlyCloudyDay'
+import PartCloudNight from "../WeatherComponents/PartlyCloudyNight";
+import Cloudy from "../WeatherComponents/BrokenClouds";
+import Rain from "../WeatherComponents/Rain";
+import NightRain from "../WeatherComponents/RainyNight";
+import DayRain from "../WeatherComponents/RainyDay";
+import ThunderStorm from "../WeatherComponents/Thunderstorm";
+import Snowy from "../WeatherComponents/Snow";
+import Fog from "../WeatherComponents/Atmosphere";
+import SingleCloud from "../WeatherComponents/Cloud";
+import Sun from "../WeatherComponents/Sun";
+import Moon from "../WeatherComponents/Moon";
 
 const CurrentWeather = ({ data }) => {
     return (

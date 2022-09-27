@@ -1,9 +1,9 @@
 import { Anchor, Footer, Text } from 'grommet'
-import { GitButton } from './GitHubButton'
-import { LinkedInButton } from './LinkedInButton'
-import { PhoneButton } from './PhoneButton'
-import { MailButton } from './MailButton'
-import { ResumeButton } from './ResumeButton'
+import { GitButton } from '../Buttons/GitHubButton'
+import { LinkedInButton } from '../Buttons/LinkedInButton'
+import { PhoneButton } from '../Buttons/PhoneButton'
+import { MailButton } from '../Buttons/MailButton'
+import { ResumeButton } from '../Buttons/ResumeButton'
 
 
 const Footerbar = () => {

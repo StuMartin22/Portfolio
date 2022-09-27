@@ -1,5 +1,5 @@
-import CurrentWeather from "../components/CurrentWeather";
-import SearchBar from "../components/WeatherSearch";
+import CurrentWeather from "../components/WeatherApp/CurrentWeather/CurrentWeather";
+import SearchBar from "../components/WeatherApp/WeatherSearch";
 import { Heading, Main, Page, PageContent, Paragraph} from "grommet";
 import { WeatherAPICall_URL, WeatherKEY } from "../constants/api_fetch";
 import { useState } from "react";
@@ -27,7 +27,6 @@ const Weather = () => {
             .catch((err) => console.log(err));
     }
 
-    console.log(WeatherNow);
     console.log(WeatherLater);
 
     return (
@@ -38,7 +37,7 @@ const Weather = () => {
                         Welcome to the weather!
                     </Heading>
                     <Paragraph>
-                        This is a little app built using React, the CSS library grommet, OpenWeatherMapsAPI data, GeoDB Cities API data, and the Asyncpaginate node package.
+                        This was built using React, the CSS library grommet, OpenWeatherMapsAPI data, GeoDB Cities API data, and the Asyncpaginate node package.
                     </Paragraph>
                     <SearchBar onSearchChange={handleOnSearchChange} />
                 </PageContent>

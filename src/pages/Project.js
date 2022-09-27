@@ -1,5 +1,5 @@
 import { Carousel, Heading, Main, Page, PageContent, Paragraph } from "grommet";
-import { ProjectCard } from "../components/ProjectCard";
+import { ProjectCard } from "../components/ProjectsPage/ProjectCard";
 
 const Myprojects = () => {
     return (

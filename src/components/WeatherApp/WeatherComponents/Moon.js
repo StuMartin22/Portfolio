@@ -1,5 +1,5 @@
 import React from 'react';
-import Moony from '../images/moon-pngrepo-com.png';
+import Moony from '../../../images/WeatherIcons/moon-pngrepo-com.png';
 
 //return image imported from above
 function Moon() {

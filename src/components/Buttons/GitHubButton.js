@@ -1,6 +1,6 @@
 import { Button } from "grommet";
 import { Github } from "grommet-icons";
-import { ToolTipAccent } from "./ToolTipAccent";
+import { ToolTipAccent } from "../MainUI/ToolTipAccent";
 
 export const GitButton = (props) => {
 return(

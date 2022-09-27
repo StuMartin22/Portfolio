@@ -1,6 +1,6 @@
 import { Button } from "grommet";
 import { Download } from "grommet-icons";
-import { ToolTipAccent } from "./ToolTipAccent";
+import { ToolTipAccent } from "../MainUI/ToolTipAccent";
 
 export const ResumeButton = (props) => {
     return (

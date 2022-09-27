@@ -1,5 +1,5 @@
 import React from 'react';
-import PartCloudDay from '../images/cloudy-pngrepo-com.png';
+import PartCloudDay from '../../../images/WeatherIcons/cloudy-pngrepo-com.png';
 
 //return image imported from above
 function PartCloud() {

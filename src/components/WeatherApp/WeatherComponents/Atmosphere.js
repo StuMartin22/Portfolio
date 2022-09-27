@@ -1,5 +1,5 @@
 import React from 'react';
-import Foggy from '../images/fog-pngrepo-com.png';
+import Foggy from '../../../images/WeatherIcons/fog-pngrepo-com.png';
 
 //return image imported from above
 function Fog() {

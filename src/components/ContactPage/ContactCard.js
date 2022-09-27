@@ -1,9 +1,9 @@
 import { Card, CardHeader, CardBody, CardFooter, Text } from "grommet";
-import { MailButton } from "./MailButton";
-import { PhoneButton } from "./PhoneButton";
-import { GitButton } from "./GitHubButton";
-import { LinkedInButton } from "./LinkedInButton";
-import { ResumeButton } from "./ResumeButton";
+import { MailButton } from "../Buttons/MailButton";
+import { PhoneButton } from "../Buttons/PhoneButton";
+import { GitButton } from "../Buttons/GitHubButton";
+import { LinkedInButton } from "../Buttons/LinkedInButton";
+import { ResumeButton } from "../Buttons/ResumeButton";
 
 export const ContactCard = (props) => {
     return(

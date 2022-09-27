@@ -1,5 +1,5 @@
 import React from 'react';
-import PartlyCloudyNight from '../images/partly-cloudy-night-pngrepo-com (1).png';
+import PartlyCloudyNight from '../../../images/WeatherIcons/partly-cloudy-night-pngrepo-com (1).png';
 
 //return image imported from above
 function PartCloudNight() {

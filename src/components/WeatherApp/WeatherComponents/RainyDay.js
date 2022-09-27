@@ -1,5 +1,5 @@
 import React from 'react';
-import RainDay from '../images/day-rain-pngrepo-com.png';
+import RainDay from '../../../images/WeatherIcons/day-rain-pngrepo-com.png';
 
 //return image imported from above
 function DayRain() {
