@@ -1,5 +1,5 @@
 import { Box, Card, CardHeader, CardBody, CardFooter, Paragraph, Text } from "grommet";
-import PartCloud from '../WeatherComponents/PartlyCloudyDay'
+import PartCloud from '../WeatherComponents/PartlyCloudyDay';
 import PartCloudNight from "../WeatherComponents/PartlyCloudyNight";
 import Cloudy from "../WeatherComponents/BrokenClouds";
 import Rain from "../WeatherComponents/Rain";

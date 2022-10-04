@@ -43,7 +43,7 @@ const Weather = () => {
                     <SearchBar onSearchChange={handleOnSearchChange} />
                 </PageContent>
                 { WeatherNow && <CurrentWeather data={WeatherNow} />} 
-                <FutureWeather />
+                { WeatherLater && <FutureWeather data={WeatherLater} />}
             </Page>
         </Main>
 
