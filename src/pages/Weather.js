@@ -27,7 +27,7 @@ const Weather = () => {
             })
             .catch((err) => console.log(err));
     }
-
+    console.log(WeatherNow);
     console.log(WeatherLater);
 
     return (
