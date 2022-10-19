@@ -1,7 +1,7 @@
 import CurrentWeather from "../components/WeatherApp/CurrentWeather/CurrentWeather";
 import FutureWeather from "../components/WeatherApp/FutureWeather/FutureWeather";
 import SearchBar from "../components/WeatherApp/WeatherSearch";
-import { Heading, Main, Page, PageContent, Paragraph} from "grommet";
+import { Grid, Heading, Main, Page, PageContent, Paragraph} from "grommet";
 import { WeatherAPICall_URL, WeatherKEY } from "../constants/api_fetch";
 import { useState } from "react";
 
@@ -31,9 +31,9 @@ const Weather = () => {
     console.log(WeatherLater);
 
     return (
-        <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }} width={{ min: '190px' }} >
+        <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }} width={{ min: '230px' }} >
             <Page kind="narrow" align='center'>
-                <PageContent background="light-3" elevation='large' align='center' width={{ min: '190px', max: '80vw' }} border={{ size: 'medium', color: 'brand' }} round='small' margin={{bottom:'5vh'}}>
+                <PageContent background="light-3" elevation='large' align='center' width={{ min: '230px', max: '80vw' }} border={{ size: 'medium', color: 'brand' }} round='small' margin={{bottom:'5vh'}}>
                     <Heading>
                         Welcome to the weather!
                     </Heading>
@@ -43,7 +43,11 @@ const Weather = () => {
                     <SearchBar onSearchChange={handleOnSearchChange} />
                 </PageContent>
                 { WeatherNow && <CurrentWeather data={WeatherNow} />} 
-                { WeatherLater && <FutureWeather data={WeatherLater} />}
+                <PageContent width={{max:'100vw'}} justify='center' alignContent="center">
+                    <Grid columns={'medium'} gap="xsmall">
+                        { WeatherLater && <FutureWeather data={WeatherLater} />}
+                    </Grid>
+                </PageContent>
             </Page>
         </Main>
 

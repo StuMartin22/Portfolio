@@ -6,7 +6,7 @@ const Myprojects = () => {
 
         <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }}>
             <Page kind="narrow" align='center'>
-                <PageContent background="light-3" elevation='large' align='center' width={{ min: '190px', max: '80vw' }} border={{ size: 'medium', color: 'brand' }} round='small' margin={{ bottom: '3vh' }}>
+                <PageContent background="light-3" elevation='large' align='center' width={{ min: '230px', max: '80vw' }} border={{ size: 'medium', color: 'brand' }} round='small' margin={{ bottom: '3vh' }}>
                     <Heading>
                         Previous Work!
                     </Heading>

@@ -9,7 +9,7 @@ import { ResumeButton } from '../Buttons/ResumeButton'
 const Footerbar = () => {
   return (
     <div>
-      <Footer pad="small" background={{ color: "brand" }} responsive={true} wrap={true} align='center' alignContent='center' position='absolute' margin={{bottom:'0'}} width={{min:'190px'}}>
+      <Footer pad="small" background={{ color: "brand" }} responsive={true} wrap={true} align='center' alignContent='center' position='absolute' margin={{bottom:'0'}} width={{min:'230px'}}>
         <Text>Contact me:</Text>
         <GitButton iconsize='medium' />
         <LinkedInButton iconsize='medium' />
