@@ -19,19 +19,19 @@ const FutureWeather = ({ data }) => {
             {neededWeather.map((item, index) => (
                 <Card key={index} width={{ max: 'auto', min: '230px' }} height={{ min: 'auto' }} wrap={true} background='light-2' border={{ 'color': 'brand', 'size': 'medium' }} margin={{bottom:'1vh'}} fill='horizontal'>
                     <CardHeader  pad='medium'  background='dark-2' className="Date" justify="center">
-                        <Text size='large' weight='bolder'>{item.dt_txt.substring(5, 10)}</Text>
+                        <Text size='x-large' weight='bolder'>{item.dt_txt.substring(5, 10)}</Text>
                     </CardHeader>
                     <CardBody>
                         <Paragraph alignSelf="center" margin={{bottom:'-2vh'}}>
-                            <Text weight='bold'>High: </Text>
-                            <Text className="FutureWeatherHighTemp" size='large' >{item.main.temp_max.toFixed(0)}°F</Text>
+                            <Text weight='bold' size='x-large'>High: </Text>
+                            <Text className="FutureWeatherHighTemp" size='x-large' >{item.main.temp_max.toFixed(0)}°F</Text>
                         </Paragraph>
-                        <Paragraph alignSelf="center">
-                            <Text weight='bold'> Low: </Text>
-                            <Text className="FutureWeatherLowTemp" size='large' >{item.main.temp_min.toFixed(0)}°F</Text>
+                        <Paragraph alignSelf="center" margin={{bottom: '-2vh'}}>
+                            <Text weight='bold' size='x-large'> Low: </Text>
+                            <Text className="FutureWeatherLowTemp" size='x-large' >{item.main.temp_min.toFixed(0)}°F</Text>
                         </Paragraph>
-                        <Paragraph alignSelf="center">
-                            <Text className="FutureWeatherDescription" size="x-large" >{item.weather[0].description}</Text>
+                        <Paragraph alignSelf="center" >
+                            <Text className="FutureWeatherDescription" size="x-large">{item.weather[0].description}</Text>
                         </Paragraph>
                     </CardBody>
                     <CardFooter background="light-2" alignSelf="center">
