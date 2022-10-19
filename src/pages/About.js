@@ -1,18 +1,18 @@
 // importing styled components from Grommet
 import { Heading, Main, Paragraph, Page, PageContent } from 'grommet'
 // import Badge component
-import Badge from '../components/CredlyBadge';
+import Badge from '../components/AboutPage/CredlyBadge';
 
 // function to return page info. 
 const Mybio = () => {
   return (
     // Setting up content area of page
-    <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }} width={{min:'190px'}}>
+    <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }} width={{min:'230px'}}>
       <Page kind="narrow" align='center'>
-        <PageContent background="light-3" elevation='large' align='center' width={{ min: '190px', max: '80vw' }} margin={{ bottom: '3vh' }} border={{ size: '3px', color: 'brand' }} round='small' justify='center' responsive={true}>
+        <PageContent background="light-3" elevation='large' align='center' width={{ min: '230px', max: '80vw' }} margin={{ bottom: '3vh' }} border={{ size: '3px', color: 'brand' }} round='small' justify='center' responsive={true}>
           <Heading responsive={true}>My Bio</Heading>
         </PageContent>
-        <PageContent background="light-3" elevation='large' align='center' width={{ min: '190px', max: '80vw' }} overflow='auto' border={{ size: '3px', color: 'brand' }} round='small'>
+        <PageContent background="light-3" elevation='large' align='center' width={{ min: '230px', max: '80vw' }} overflow='auto' border={{ size: '3px', color: 'brand' }} round='small'>
           {/* following is information about myself. Formatting included via props in Grommet tags */}
           <Paragraph fill='true' textAlign='center' justify='center'>
             I graduated from Rogers State University in 2017 with a Bachelor's of Science in Biology -  Environmental Conservation where I received the award of Best Senior Research Capstone for the program that year.

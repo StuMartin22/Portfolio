@@ -1,7 +1,7 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footerbar  from './components/Footerbar'
-import Headerbar  from './components/Headerbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footerbar  from '../src/components/MainUI/Footerbar'
+import Headerbar  from '../src/components/MainUI/Headerbar'
 import { Grommet } from 'grommet';
 import Mainpage from './pages/Main'
 import myTheme from './mytheme'

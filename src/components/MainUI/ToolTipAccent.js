@@ -21,5 +21,3 @@ export const ToolTipAccent = (props) => {
 </Tip>
     )
 };
-
-// {props.tipMessage}

@@ -1,11 +1,11 @@
 import { Carousel, Heading, Main, PageContent, Page, Paragraph } from 'grommet';
-import { ContactCard } from '../components/ContactCard'
+import { ContactCard } from '../components/ContactPage/ContactCard'
 
 const Contact = () => {
     return (
         <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }}>
             <Page kind="narrow" align='center'>
-                <PageContent background="light-3" elevation='large' align='center' width={{ min: '190px', max: '80vw' }} margin={{ bottom: '3vh' }} border={{ size: 'medium', color: 'brand' }} round='small' justify='center' responsive={true} bottom={{ margin: '2vh' }}>
+                <PageContent background="light-3" elevation='large' align='center' width={{ min: '230px', max: '80vw' }} margin={{ bottom: '3vh' }} border={{ size: 'medium', color: 'brand' }} round='small' justify='center' responsive={true} bottom={{ margin: '2vh' }}>
                     <Heading>
                         How to contact me!
                     </Heading>

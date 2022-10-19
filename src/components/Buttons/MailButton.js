@@ -1,7 +1,7 @@
 import { Button } from "grommet";
 import { Mail } from "grommet-icons";
-import emailRunner from "../constants/copyEmailFunction";
-import { ToolTipAccent } from "./ToolTipAccent";
+import emailRunner from "../../constants/copyEmailFunction";
+import { ToolTipAccent } from "../MainUI/ToolTipAccent";
 
 export const MailButton = (props) => {
     return (

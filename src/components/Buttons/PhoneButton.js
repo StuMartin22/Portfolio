@@ -1,7 +1,7 @@
-import phoneRunner from "../constants/copyPhoneFunction";
+import phoneRunner from "../../constants/copyPhoneFunction";
 import { Button, } from "grommet";
 import { Phone } from "grommet-icons";
-import { ToolTipAccent } from './ToolTipAccent'
+import { ToolTipAccent } from '../MainUI/ToolTipAccent'
 
 export const PhoneButton = (props) => {
 return(

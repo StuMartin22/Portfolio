@@ -1,5 +1,5 @@
 import { AsyncPaginate } from "react-select-async-paginate"
-import { LocationAPI, LocationAPI_URL } from '../constants/api_fetch'
+import { LocationAPI, LocationAPI_URL } from '../../constants/api_fetch'
 import { useState } from "react";
 
 const SearchBar = ({onSearchChange}) => {
