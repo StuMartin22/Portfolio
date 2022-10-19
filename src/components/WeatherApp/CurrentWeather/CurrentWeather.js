@@ -14,7 +14,7 @@ import Moon from "../WeatherComponents/Moon";
 
 const CurrentWeather = ({ data }) => {
     return (
-        <Card width={{ max: '60vw', min: 'small' }} height={{ min: 'auto' }} wrap={true} justify='center' align='center' background='light-2' border={{ 'color': 'brand', 'size': 'medium' }}>
+        <Card width={{ max: '60vw', min: 'small' }} height={{ min: 'auto' }} wrap={true} justify='center' align='center' background='light-2' border={{ 'color': 'brand', 'size': 'medium' }} margin={{bottom:'5vh'}}>
             <CardHeader alignSelf='center' pad='medium' fill='horizontal' background='dark-2' className="Date">
                 <Text size='large' weight='bolder'>Weather Outlook for {data.city} Today: </Text>
             </CardHeader>
