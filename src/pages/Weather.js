@@ -27,8 +27,6 @@ const Weather = () => {
             })
             .catch((err) => console.log(err));
     }
-    console.log(WeatherNow);
-    console.log(WeatherLater);
 
     return (
         <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }} width={{ min: '230px' }} >
@@ -50,17 +48,6 @@ const Weather = () => {
                 </PageContent>
             </Page>
         </Main>
-
-        // <Main pad="small" align='center' justify='center' flex={true} responsive={true} wrap={true} height={{ min: '100vh' }} width={{ min: '190px' }} >
-        //     <Page kind="narrow" align='center'>
-        //         <PageContent background="light-3" elevation='large' align='center' width={{ min: '190px', max: '80vw' }} border={{ size: 'medium', color: 'brand' }} round='small' margin={{ bottom: '5vh' }}>
-        //             <Heading>
-        //                 Weather Coming Soon!
-        //             </Heading>
-        //         </PageContent>
-        //     </Page>
-        // </Main>
-
     )
 }
 
