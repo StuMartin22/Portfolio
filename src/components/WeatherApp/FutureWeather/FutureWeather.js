@@ -21,7 +21,7 @@ const FutureWeather = ({ data }) => {
             {neededWeather.map((item, index) => (
                 <Card key={index} width={{ max: '60vw', min: 'small' }} height={{ min: 'auto' }} wrap={true} justify='center' align='center' background='light-2' border={{ 'color': 'brand', 'size': 'medium' }}>
                     <CardHeader alignSelf='center' pad='medium' fill='horizontal' background='dark-2' className="Date">
-                        <Text size='large' weight='bolder'>Weather Outlook for {item.city} {item.dt_txt.substring(0,10)} </Text>
+                        <Text size='large' weight='bolder'>Weather Outlook for {item.city} {item.dt_txt.substring(0, 10)} </Text>
                     </CardHeader>
                     <CardBody alignSelf='center'>
                         <Paragraph>
@@ -37,18 +37,31 @@ const FutureWeather = ({ data }) => {
                     <CardFooter background="light-2" padding={{ right: 'small', left: 'small' }}>
                         <Box alignSelf='center' className="FutureWeatherTypeIcon" width={{ max: 'small' }} height={{ max: 'small' }} margin={{ bottom: '5vh' }} >
                             <div>
-                                {(item.weather[0].icon === '01d' && <Sun />)
-                                    || (item.weather[0].icon === '01n' && <Moon />)
-                                    || (item.weather[0].icon === '02d' && <PartCloud />)
-                                    || (item.weather[0].icon === '02n' && <PartCloudNight />)
-                                    || (item.weather[0].icon === ('03d' || '03n') && <SingleCloud />)
-                                    || (item.weather[0].icon === ('04d' || '04n') && <Cloudy />)
-                                    || (item.weather[0].icon === ('09d' || '09n') && <Rain />)
-                                    || (item.weather[0].icon === '10d' && <DayRain />)
-                                    || (item.weather[0].icon === '10n' && <NightRain />)
-                                    || (item.weather[0].icon === ('11d' || '11n') && <ThunderStorm />)
-                                    || (item.weather[0].icon === ('13d' || '13n') && <Snowy />)
-                                    || (item.weather[0].icon === ('50d' || '50n') && <Fog />)}
+                                {(
+                                item.weather[0].icon === '01d' && 
+                                <Sun IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === '02d' && 
+                                <PartCloud IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === '01n' && 
+                                <Moon IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === ('03d' || '03n') && 
+                                <SingleCloud IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === '02n' && 
+                                <PartCloudNight IconSize={{ width: '5vw', height: '5vh' }}/>)
+                                || (item.weather[0].icon === ('04d' || '04n') && 
+                                <Cloudy IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === ('09d' || '09n') && 
+                                <Rain IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === '10d' && 
+                                <DayRain IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === '10n' && 
+                                <NightRain IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === ('11d' || '11n') && 
+                                <ThunderStorm IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === ('13d' || '13n') && 
+                                <Snowy IconSize={{ width: '5vw', height: '5vh' }} />)
+                                || (item.weather[0].icon === ('50d' || '50n') && 
+                                <Fog IconSize={{ width: '5vw', height: '5vh' }} />)}
                             </div>
                         </Box>
                     </CardFooter>

@@ -14,7 +14,7 @@ import Moon from "../WeatherComponents/Moon";
 
 const CurrentWeather = ({ data }) => {
     return (
-        <Card width={{ max: '60vw', min: 'small' }} height={{ min: 'auto' }} wrap={true} justify='center' align='center' background='light-2' border={{ 'color': 'brand', 'size': 'medium' }} margin={{bottom:'5vh'}}>
+        <Card width={{ max: '60vw', min: 'small' }} height={{ min: 'auto' }} wrap={true} justify='center' align='center' background='light-2' border={{ 'color': 'brand', 'size': 'medium' }} margin={{ bottom: '5vh' }}>
             <CardHeader alignSelf='center' pad='medium' fill='horizontal' background='dark-2' className="Date">
                 <Text size='large' weight='bolder'>Weather Outlook for {data.city} Today: </Text>
             </CardHeader>
@@ -24,23 +24,37 @@ const CurrentWeather = ({ data }) => {
                     <Text className="WeatherCurrentTemp" size='xx-large'>{data.main.temp.toFixed(0)}°F</Text>
                 </Paragraph>
                 <Paragraph alignSelf="center">
-                    <Text weight='bold' margin={{ right:'1vh' }} alignSelf="center">Feels Like:</Text> 
+                    <Text weight='bold' margin={{ right: '1vh' }} alignSelf="center">Feels Like:</Text>
                     <Text className="FeelsLike" size='x-large'>{data.main.feels_like.toFixed(0)}°F</Text>
                 </Paragraph>
-                <Box alignSelf='center' className="WeatherTypeIcon" width={{max:'small'}} height={{max:'small'}} margin={{bottom:'5vh'}}>
+                <Box alignSelf='center' className="WeatherTypeIcon" width={{ max: 'small' }} height={{ max: 'small' }} margin={{ bottom: '5vh' }}>
                     <div>
-                        {(data.weather[0].icon === '01d' && <Sun />)
-                        ||(data.weather[0].icon === '01n' && <Moon />)
-                        ||(data.weather[0].icon === '02d' && <PartCloud />)
-                        ||(data.weather[0].icon === '02n' && <PartCloudNight />)
-                        ||(data.weather[0].icon === ('03d'||'03n') && <SingleCloud />)
-                        ||(data.weather[0].icon === ('04d'||'04n') && <Cloudy />)
-                        ||(data.weather[0].icon === ('09d'||'09n') && <Rain />)
-                        ||(data.weather[0].icon === '10d' && <DayRain />)
-                        ||(data.weather[0].icon === '10n' && <NightRain />)
-                        ||(data.weather[0].icon === ('11d'||'11n') && <ThunderStorm />)
-                        ||(data.weather[0].icon === ('13d' ||'13n') && <Snowy />)
-                        ||(data.weather[0].icon === ('50d'||'50n') && <Fog />)}
+                        {(
+                            data.weather[0].icon === '01d' && 
+                            <Sun IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === '01n' && 
+                            <Moon IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === '02d' && 
+                            <PartCloud IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === '02n' && 
+                            <PartCloudNight IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === ('03d' || '03n') && 
+                            <SingleCloud IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === ('04d' || '04n') && 
+                            <Cloudy IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === ('09d' || '09n') && 
+                            <Rain IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === '10d' && 
+                            <DayRain IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === '10n' && 
+                            <NightRain IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === ('11d' || '11n') && 
+                            <ThunderStorm IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === ('13d' || '13n') && 
+                            <Snowy IconSize={{ width: '20vw', height: '20vh' }} />)
+                            || (data.weather[0].icon === ('50d' || '50n') && 
+                            <Fog IconSize={{ width: '20vw', height: '20vh' }} />
+                        )}
                     </div>
                 </Box>
                 <Text className="WeatherDescription" size="x-large" alignSelf="center">{data.weather[0].description}</Text>
