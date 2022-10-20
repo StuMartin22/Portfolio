@@ -15,13 +15,21 @@ const Myprojects = () => {
                     </Paragraph>
                 </PageContent>
                 <Carousel controls='arrows' wrap={true} margin={{ bottom: '2vh' }} width={{ min: 'small' }} >
+                <ProjectCard
+                        HeaderText='Weather App'
+                        BodyText='A small app designed to help the user find out the current weather, and 5 day weather conditions for a searched location.
+                            
+                            This is a weather dashboard that pulls information from an openweatherAPI and displays it on the page. My first iteration of this project was several months ago and built with very limited html/css knowledge so I wanted to go back and give it another go with my knowledge now, and I have to say, its definitely come a long way from the first version!'
+                        LiveLink='/weather'
+                        RepoLink='https://github.com/StuMartin22/portfolio'
+                    />
                     <ProjectCard
                         HeaderText='National Park Explorer'
                         BodyText='A collaborative full stack website project designed to help you find out more about National Parks. Not sure where to go? See tons of information about lots of parks and view comments other users have made. 
                             
                             This application was a collaboration between myself and 3 other authors for a project during BootCamp. This is still in a draft state. We had one week to create this application from scratch. Utilized React, JavaScript, GraphQL, and an API from the US National Parks Service.'
                         LiveLink='https://natl-parks-explorer.herokuapp.com/'
-                        RepoLink='https://github.com/StuMartin22/national-park-explorerd'
+                        RepoLink='https://github.com/StuMartin22/national-park-explorer'
                     />
                     <ProjectCard
                         HeaderText='Genre-Finder'
@@ -30,14 +38,6 @@ const Myprojects = () => {
                             I loved the challenge of not only creating the application, but making sure everyone was on task and working on separate aspects to create one unified product. Designed to allow you to find top albums or artists from preselected genres. Future development ideas would include an update to the UX/UI and better utilizing API data from searches via JavaScript logic.'
                         LiveLink='https://stumartin22.github.io/genre-finder/'
                         RepoLink='https://github.com/StuMartin22/genre-finder'
-                    />
-                    <ProjectCard
-                        HeaderText='Weather App'
-                        BodyText='A small app designed to help the user find out the current weather, and 5 day weather conditions for a searched location.
-                            
-                            This is a weather dashboard that pulls information from an API and displays it on the page. Originally written in basic HTML, CSS, and JavaScript but I am currently working on adapting it into a react application while refactoring the current functionality.'
-                        LiveLink='https://stumartin22.github.io/weather-app/'
-                        RepoLink='https://github.com/StuMartin22/weather-app'
                     />
                 </Carousel>
             </Page>

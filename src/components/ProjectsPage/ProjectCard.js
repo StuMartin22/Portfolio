@@ -10,8 +10,8 @@ export const ProjectCard = (props) => {
               {props.BodyText}
               </CardBody>
               <CardFooter background='light-3' wrap={true}>
-                <Button primary={true} className='LiveLink' label='View App' href={props.ButtonLink} />
-                <Button secondary={true} className='RepoLink' label='View Repo' href={props.ButtonTwoLink}  />
+                <Button primary={true} className='LiveLink' label='View App' href={props.LiveLink} />
+                <Button secondary={true} className='RepoLink' label='View Repo' href={props.RepoLink}  />
               </CardFooter>
             </Card>
     )
